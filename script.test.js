@@ -10,8 +10,6 @@ it("hitFunc works", () => {
   expect(a.hasSunk()).toBe(true);
 });
 
-it("setPosition works from within Gameboard", () => {});
-
 it("gameboard adds ships verticaly", () => {
   const a = Gameboard();
   a.addShip("whatever", 2, [0, 0], true);
