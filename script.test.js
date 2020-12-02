@@ -1,20 +1,43 @@
 import { Ship, Gameboard } from "./script";
 
 it("hasSunk works", () => {
-  const a = Ship(2);
-  expect(a.hasSunk()).toBe(false);
+  expect(Ship(2).hasSunk()).toBe(false);
 });
 
 it("hitFunc works", () => {
-  const a = Ship(2);
+  const a = Ship(1);
   a.hitFunc(1);
-  a.hitFunc(2);
   expect(a.hasSunk()).toBe(true);
 });
 
-it("Gameboard places ships at specific cordinates", () => {
-  const a = Ship(2);
-  expect(Gameboard(2, 3)).toBe({});
+it("setPosition works from within Gameboard", () => {});
+
+it("gameboard adds ships verticaly", () => {
+  const a = Gameboard();
+  a.addShip("whatever", 2, [0, 0], true);
+  const g = a.getGameboard();
+  expect(g[0][0] && g[1][0]).toBe("whatever");
 });
 
-// Gameboards should be able to place ships at specific coordinates by calling the ship factory function
+it("gameboard adds ships horizontaly", () => {
+  const a = Gameboard();
+  a.addShip("whatever", 2, [0, 0], false);
+  const g = a.getGameboard();
+  expect(g[0][0] && g[0][1]).toBe("whatever");
+});
+
+it("attack works at boat", () => {
+  const a = Gameboard();
+  a.addShip("whatever", 2, [0, 0], false);
+  a.receiveAttack(0, 0);
+  const g = a.getGameboard();
+  expect(g[0][0]).toBe("atacked");
+});
+
+it("attack fails", () => {
+  const a = Gameboard();
+  a.addShip("whatever", 2, [0, 0], false);
+  a.receiveAttack(1, 0);
+  const g = a.getGameboard();
+  expect(g[1][0]).toBe("missed");
+});
