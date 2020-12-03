@@ -62,14 +62,14 @@ const Gameboard = () => {
     });
   } 
   const receiveAttack = (a, b) => {
-    let position = gameboard[a][b];
-    if (position === "") {
+    let p = gameboard[a][b];
+    if (p === "") {
       gameboard[a][b] = "missed";
       return false
     } else {
       ships.map((ship) => {
-        if (ship.getShipId() === gameboard[a][b]) {
-          gameboard[a][b] = "atacked";
+        if (ship.getShipId() === p) {
+          gameboard[a][b] = "attacked";
           ship.hitFunc(a, b);
           return true
         }
@@ -77,8 +77,11 @@ const Gameboard = () => {
     }
   };
 
+  const haveAllSunk = () => ships.every(ship => ship.hasSunk())
+
   const getGameboard = () => gameboard;
   return {
+    haveAllSunk,
     addShip,
     getGameboard,
     receiveAttack,

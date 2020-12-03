@@ -1,12 +1,12 @@
 import { Ship, Gameboard } from "./script";
 
-it("hasSunk works", () => {
+it("Ship hasSunk works", () => {
   const a = Ship("w", 1, [0,0], true);
   a.hitFunc(1);
   expect(a.hasSunk()).toBeTruthy();
 });
 
-it("hitFunc works", () => {
+it("Ship hitFunc works", () => {
   const a = Ship("w", 1, [0,0], true);
   a.hitFunc(1);
   expect(a.hasSunk()).toBeTruthy();
@@ -33,7 +33,7 @@ it("Gameboard keeps track of sucessful attacks", () => {
   a.addShip("w", 2, [0, 0], false);
   a.receiveAttack(0, 0);
   const g = a.getGameboard();
-  expect(g[0][0]).toBe("atacked");
+  expect(g[0][0]).toBe("attacked");
 });
 
 it("Gameboard keeps track of missed attacks", () => {
@@ -44,10 +44,13 @@ it("Gameboard keeps track of missed attacks", () => {
   expect(g[1][0]).toBe("missed");
 });
 
-it("Gameboard reports if all of their ships have been sunk", () => {
+it("Gameboard reports if all of their ships have sunk", () => {
   const a = Gameboard();
-  a.addShip("w", 2, [0, 0], false);
+  a.addShip("w", 2, [0, 0], true);
+  a.addShip("w", 2, [0, 1], true);
+  a.receiveAttack(0, 0);
   a.receiveAttack(1, 0);
-  const g = a.getGameboard();
-  expect(g[1][0]).toBe("missed");
+  a.receiveAttack(0, 1);
+  a.receiveAttack(0, 2);
+  expect(a.haveAllSunk()).toBeTruthy();
 });
