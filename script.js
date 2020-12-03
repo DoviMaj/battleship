@@ -5,18 +5,17 @@ const Ship = (id, length, p, vertical) => {
     ship[n] = "hit";
   }
   function hasSunk() {
-    let sunk = false;
-    ship.map((i) => (i === "hit" ? (sunk = true) : (sunk = false)));
-    return sunk;
+    return ship.every((i) => (i === "hit"));
   }
   const getLength = () => length;
   const getShipId = () => id;
   const getVertical = () => vertical;
+  const getPosition = () => position;
   return {
     getVertical,
     getLength,
     getShipId,
-    position,
+    getPosition,
     hasSunk,
     hitFunc,
   };
@@ -37,29 +36,42 @@ const Gameboard = () => {
     9: ["", "", "", "", "", "", "", "", "", ""],
   };
   const addShip = (id, length, position, vertical) => {
-    ships.push(Ship(id, length, position, vertical));
-    ships.forEach((ship) => {
-      if (ship.getVertical()) {
-        for (let i = 0; i < ship.getLength(); i++) {
-          gameboard[ship.position[0] + i][ship.position[1]] = ship.getShipId();
-        }
+    // store position of each part of ship in ship
+    let allPositions = [];
+    for (let i = 0; i < length; i++) {
+      if (vertical) {
+        allPositions.push([position[0] + i, position[1]]);
       } else {
-        for (let i = 0; i < ship.getLength(); i++) {
-          gameboard[ship.position[0]][ship.position[1] + i] = ship.getShipId();
+        allPositions.push([position[0], position[1] + i]);
+      }
+    }
+    // create and store ship
+    ships.push(Ship(id, length, allPositions, vertical));
+    updateGameboard()
+  };
+  const updateGameboard = () => {
+    ships.forEach((ship) => {
+      let p = ship.getPosition();
+      for (let i = 0; i < ship.getLength(); i++) {
+        if (ship.getVertical()) {
+          gameboard[p[i][0]][p[i][1]] = ship.getShipId();
+        } else {
+          gameboard[p[i][0]][p[i][1]] = ship.getShipId();
         }
       }
     });
-  };
+  } 
   const receiveAttack = (a, b) => {
     let position = gameboard[a][b];
     if (position === "") {
       gameboard[a][b] = "missed";
+      return false
     } else {
       ships.map((ship) => {
         if (ship.getShipId() === gameboard[a][b]) {
           gameboard[a][b] = "atacked";
-          // fix hitFunc to target specific index from ship
           ship.hitFunc(a, b);
+          return true
         }
       });
     }

@@ -1,40 +1,52 @@
 import { Ship, Gameboard } from "./script";
 
 it("hasSunk works", () => {
-  expect(Ship(2).hasSunk()).toBe(false);
+  const a = Ship("w", 1, [0,0], true);
+  a.hitFunc(1);
+  expect(a.hasSunk()).toBeTruthy();
 });
 
 it("hitFunc works", () => {
-  const a = Ship(1);
+  const a = Ship("w", 1, [0,0], true);
   a.hitFunc(1);
-  expect(a.hasSunk()).toBe(true);
+  expect(a.hasSunk()).toBeTruthy();
 });
 
-it("gameboard adds ships verticaly", () => {
+it("Gameboard adds ships verticaly", () => {
   const a = Gameboard();
-  a.addShip("whatever", 2, [0, 0], true);
+  a.addShip("w", 2, [0, 0], true);
   const g = a.getGameboard();
-  expect(g[0][0] && g[1][0]).toBe("whatever");
+  // expect(g).toBe();
+  expect(g[0][0] && g[1][0]).toBe("w");
 });
 
-it("gameboard adds ships horizontaly", () => {
+it("Gameboard adds ships horizontaly", () => {
   const a = Gameboard();
-  a.addShip("whatever", 2, [0, 0], false);
+  a.addShip("w", 2, [0, 0], false);
   const g = a.getGameboard();
-  expect(g[0][0] && g[0][1]).toBe("whatever");
+  // expect(g).toBe();
+  expect(g[0][0] && g[0][1]).toBe("w");
 });
 
-it("attack works at boat", () => {
+it("Gameboard keeps track of sucessful attacks", () => {
   const a = Gameboard();
-  a.addShip("whatever", 2, [0, 0], false);
+  a.addShip("w", 2, [0, 0], false);
   a.receiveAttack(0, 0);
   const g = a.getGameboard();
   expect(g[0][0]).toBe("atacked");
 });
 
-it("attack fails", () => {
+it("Gameboard keeps track of missed attacks", () => {
   const a = Gameboard();
-  a.addShip("whatever", 2, [0, 0], false);
+  a.addShip("w", 2, [0, 0], false);
+  a.receiveAttack(1, 0);
+  const g = a.getGameboard();
+  expect(g[1][0]).toBe("missed");
+});
+
+it("Gameboard reports if all of their ships have been sunk", () => {
+  const a = Gameboard();
+  a.addShip("w", 2, [0, 0], false);
   a.receiveAttack(1, 0);
   const g = a.getGameboard();
   expect(g[1][0]).toBe("missed");
