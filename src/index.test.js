@@ -1,4 +1,4 @@
-import { Ship, Gameboard, Player1, PC } from ".";
+import { Ship, Gameboard, Human, PC, HumanGameboard, PCGameboard } from ".";
 
 it("Ship hasSunk and hit works", () => {
   const a = Ship(
@@ -69,5 +69,8 @@ it("Gameboard reports if all of their ships have sunk", () => {
 });
 
 it("Player can take turns atacking the enemy", () => {
-  expect(Player1).toBeTruthy();
+  Human.attack(1, 2);
+  PCGameboard.getGameboard();
+  PC.attack();
+  expect(HumanGameboard.getGameboard()).toBe();
 });

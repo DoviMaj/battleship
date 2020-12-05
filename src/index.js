@@ -89,15 +89,17 @@ const Gameboard = () => {
     let p = gameboard[a][b];
     if (p === "") {
       gameboard[a][b] = "missed";
-      return false;
-    } else {
+      return true;
+    } else if (p !== "" && p !== "missed") {
+      gameboard[a][b] = "attacked";
       ships.map((ship) => {
         if (ship.getShipId() === p) {
-          gameboard[a][b] = "attacked";
           ship.hit([a, b]);
           return true;
         }
       });
+    } else {
+      return false;
     }
   };
 
@@ -112,14 +114,46 @@ const Gameboard = () => {
   };
 };
 
-const Player1Gameboard = Gameboard();
-const PCGameboard = Gameboard();
+// player can attack other player gameboard (x)
+// player can add ships to gameboard (x)
+// player knows if its his turn(x)
+// AI can make random moves (x)
+// AI cant attack same cordinate twice ()
 
-const Player = () => {
+let turn = false;
+const changeTurn = () => {
+  turn = !turn;
+};
+
+const Player = (type) => {
+  const attack = (a, b) => {
+    if (type === "Human") {
+      PCGameboard.receiveAttack(a, b);
+    } else {
+      // AI cant attack same cordinate twice ()
+      const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
+      HumanGameboard.receiveAttack(random(), random());
+    }
+    changeTurn();
+  };
+  const addShip = (id, length, position, vertical) => {
+    if (type === "Human") {
+      PCGameboard.addShip(id, length, position, vertical);
+    } else {
+      HumanGameboard.addShip(id, length, position, vertical);
+    }
+  };
   return {
-    Player,
+    addShip,
+    attack,
+    changeTurn,
   };
 };
-let turn = true;
 
-export { Gameboard, Ship };
+// gameflow
+const HumanGameboard = Gameboard();
+const PCGameboard = Gameboard();
+const Human = Player("Human");
+const PC = Player("PC");
+
+export { Gameboard, Ship, Human, PC, HumanGameboard, PCGameboard };
