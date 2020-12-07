@@ -1,2 +1,3 @@
 /node_modules
-main.js.map
+./dist/main.js.map
+./dist/main.js

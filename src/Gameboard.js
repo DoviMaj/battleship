@@ -1,4 +1,5 @@
 import { Ship } from "./Ship.js";
+
 export const Gameboard = () => {
   const ships = [];
   const gameboard = [

@@ -1,4 +1,5 @@
 import { gameflow } from "./index.js";
+
 const domManipulation = () => {
   //Human Board
   const app = document.querySelector(".app");
