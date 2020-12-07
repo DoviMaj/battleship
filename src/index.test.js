@@ -1,4 +1,7 @@
-import { Ship, Gameboard, Human, PC, HumanGameboard, PCGameboard } from ".";
+import { Ship, Gameboard } from ".";
+jest.mock("./style.css", () => {
+  return {};
+});
 
 it("Ship hasSunk and hit works", () => {
   const a = Ship(
@@ -16,21 +19,22 @@ it("Ship hasSunk and hit works", () => {
   expect(a.hasSunk()).toBeTruthy();
 });
 
-it("Gameboard checks if ship can be added to positions", () => {
+it("Gameboard only adds ship if position is available", () => {
   const a = Gameboard();
   a.addShip("w", 2, [0, 0], true);
-  a.addShip("b", 2, [0, 0], true);
+  a.addShip("b", 2, [1, 0], true);
   const g = a.getGameboard();
   // expect(g).toBe();
-  expect(g[0][0] && g[1][0]).toBe("w");
+  expect(g[0][0]).toBe("w");
 });
 
 it("Gameboard adds ships verticaly", () => {
   const a = Gameboard();
-  a.addShip("w", 2, [0, 0], true);
+  a.addShip("w", 3, [0, 0], true);
+  a.addShip("b", 3, [0, 1], true);
   const g = a.getGameboard();
   // expect(g).toBe();
-  expect(g[0][0] && g[1][0]).toBe("w");
+  expect(g[0][1] && g[1][1] && g[2][1]).toBe("b");
 });
 
 it("Gameboard adds ships horizontaly", () => {
@@ -66,11 +70,4 @@ it("Gameboard reports if all of their ships have sunk", () => {
   a.receiveAttack(0, 1);
   a.receiveAttack(1, 1);
   expect(a.haveAllSunk()).toBeTruthy();
-});
-
-it("Player can take turns atacking the enemy", () => {
-  Human.attack(1, 2);
-  PCGameboard.getGameboard();
-  PC.attack();
-  expect(HumanGameboard.getGameboard()).toBe();
 });
