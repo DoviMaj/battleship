@@ -21,6 +21,7 @@ const domManipulation = () => {
     });
     humanBoard.append(line);
   });
+
   //PC Board
   const PCboard = document.createElement("div");
   PCboard.classList.add("game-board", "PC");
@@ -38,33 +39,32 @@ const domManipulation = () => {
       if (item === "missed") {
         block.style.backgroundColor = "red";
       }
-      block.addEventListener("click", () => {
+      block.addEventListener("click", (e) => {
         gameflow.PCGameboard.receiveAttack(
           Number(block.dataset.position[0]),
           Number(block.dataset.position[2])
         );
-        document.querySelector(".app").innerHTML = "";
-        domManipulation();
-        // updateBlock(block.dataset.position, "pc", result);
+        // document.querySelector(".app").innerHTML = "";
+        // domManipulation();
+        updateBlock(
+          e.target,
+          Number(block.dataset.position[0]),
+          Number(block.dataset.position[2])
+        );
       });
       line.append(block);
     });
     PCboard.append(line);
   });
   app.append(humanBoard, PCboard);
-  // const updateBlock = (id, board, result) => {
-  //   const nodes = document.querySelectorAll(`[data-position*="${id}"]`);
-  //   if (board === "pc") {
-  //     const last = nodes[nodes.length - 1];
-  //     if (result === "attacked") {
-  //       last.style.backgroundColor = "gray";
-  //     }
-  //     if (result === "missed") {
-  //       last.style.backgroundColor = "red";
-  //     }
-  //   } else {
-  //   }
-  // };
+
+  const updateBlock = (target, a, b) => {
+    if (gameflow.PCGameboard.getGameboard()[a][b] === "attacked") {
+      target.style.backgroundColor = "gray";
+    } else {
+      target.style.backgroundColor = "red";
+    }
+  };
 };
 
 export { domManipulation };

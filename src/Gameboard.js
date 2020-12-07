@@ -55,13 +55,13 @@ export const Gameboard = () => {
     let p = gameboard[a][b];
     if (p === "") {
       gameboard[a][b] = "missed";
-      return true;
+      return "missed";
     } else if (p !== "" && p !== "missed") {
       gameboard[a][b] = "attacked";
       ships.map((ship) => {
         if (ship.getShipId() === p) {
           ship.hit([a, b]);
-          return true;
+          return "attacked";
         }
       });
     } else {
