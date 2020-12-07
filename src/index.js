@@ -121,14 +121,15 @@ const Gameboard = () => {
 // player knows if its his turn(x)
 // AI can make random moves (x)
 // AI cant attack same cordinate twice (x)
+// only alow player when turn is his ()
 
 const Player = (type) => {
   const attack = (a, b) => {
     if (type === "Human") {
-      PCGameboard.receiveAttack(a, b);
+      gameflow.PCGameboard.receiveAttack(a, b);
     } else {
       const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
-      const g = HumanGameboard.getGameboard();
+      const g = gameflow.HumanGameboard.getGameboard();
       const randomC = () => [random(), random()];
       // call recursivelly until value is available
       let newArr = randomC();
@@ -138,15 +139,15 @@ const Player = (type) => {
       ) {
         newArr = randomC();
       }
-      HumanGameboard.receiveAttack(newArr[0], newArr[1]);
+      gameflow.HumanGameboard.receiveAttack(newArr[0], newArr[1]);
     }
-    changeTurn();
+    gameflow.changeTurn();
   };
   const addShip = (id, length, position, vertical) => {
     if (type === "Human") {
-      PCGameboard.addShip(id, length, position, vertical);
+      gameflow.PCGameboard.addShip(id, length, position, vertical);
     } else {
-      HumanGameboard.addShip(id, length, position, vertical);
+      gameflow.HumanGameboard.addShip(id, length, position, vertical);
     }
   };
   return {
@@ -169,12 +170,15 @@ const gameflow = (() => {
   HumanGameboard.addShip("Destroyer", 2, [0, 8], true);
   const PCGameboard = Gameboard();
   PCGameboard.addShip("Carrier", 5, [0, 0], true);
-  PCGameboard.addShip("Battleship", 4, [2, 0], false);
+  PCGameboard.addShip("Battleship", 4, [3, 4], false);
   PCGameboard.addShip("Cruiser", 3, [7, 0], true);
   PCGameboard.addShip("Submarine", 3, [0, 4], false);
   PCGameboard.addShip("Destroyer", 2, [0, 8], true);
   const Human = Player("Human");
   const PC = Player("PC");
+  if (turn) {
+    PC.attack(1, 1);
+  }
   return {
     HumanGameboard,
     PCGameboard,
@@ -183,7 +187,7 @@ const gameflow = (() => {
 
 const DOM = () => {
   //Human Board
-  const div = document.querySelector(".app");
+  const app = document.querySelector(".app");
   const humanBoard = document.createElement("div");
   humanBoard.classList.add("game-board", "human");
   const hB = gameflow.HumanGameboard.getGameboard();
@@ -214,31 +218,39 @@ const DOM = () => {
       block.className = "block";
       block.dataset.position = `${[index, ix]}`;
       if (item === "attacked") {
-        block.style.backgroundColor = "red";
+        block.style.backgroundColor = "gray";
       }
       if (item === "missed") {
-        block.style.backgroundColor = "pink";
+        block.style.backgroundColor = "red";
       }
       block.addEventListener("click", () => {
         gameflow.PCGameboard.receiveAttack(
           Number(block.dataset.position[0]),
-          Number(block.dataset.position[1])
+          Number(block.dataset.position[2])
         );
-        updateBlock(block.dataset.position, "pc");
+        document.querySelector(".app").innerHTML = "";
+        DOM();
+        // updateBlock(block.dataset.position, "pc", result);
       });
       line.append(block);
     });
     PCboard.append(line);
   });
-  div.append(humanBoard, PCboard);
-  const updateBlock = (id, board) => {
-    const nodes = document.querySelectorAll(`[data-position*="${id}"]`);
-    if (board === "pc") {
-      const last = nodes[nodes.length - 1];
-      last.style.backgroundColor = "red";
-    } else {
-    }
-  };
+  debugger;
+  app.append(humanBoard, PCboard);
+  // const updateBlock = (id, board, result) => {
+  //   const nodes = document.querySelectorAll(`[data-position*="${id}"]`);
+  //   if (board === "pc") {
+  //     const last = nodes[nodes.length - 1];
+  //     if (result === "attacked") {
+  //       last.style.backgroundColor = "gray";
+  //     }
+  //     if (result === "missed") {
+  //       last.style.backgroundColor = "red";
+  //     }
+  //   } else {
+  //   }
+  // };
 };
 
 DOM();
