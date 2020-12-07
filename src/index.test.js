@@ -1,4 +1,6 @@
-import { Ship, Gameboard } from ".";
+import { Ship } from "./Ship.js";
+import { Gameboard } from "./Gameboard.js";
+
 jest.mock("./style.css", () => {
   return {};
 });
