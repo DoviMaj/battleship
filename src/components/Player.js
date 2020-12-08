@@ -28,7 +28,6 @@ const Player = (type) => {
         } else {
           gameflow.Human.attack(newArr[0], newArr[1]);
           domManipulation().updateHumanBlock(newArr[0], newArr[1]);
-          gameflow.changeTurn();
         }
       };
       newRandomArray();

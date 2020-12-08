@@ -54,7 +54,6 @@ const domManipulation = () => {
             Number(block.dataset.position[0]),
             Number(block.dataset.position[2])
           );
-          gameflow.changeTurn();
         };
 
         block.addEventListener("click", handleClick, true);

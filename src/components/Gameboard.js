@@ -1,4 +1,5 @@
 import { Ship } from "./Ship.js";
+import { gameflow } from "../index.js";
 
 export const Gameboard = () => {
   const ships = [];
@@ -55,6 +56,7 @@ export const Gameboard = () => {
     let p = gameboard[a][b];
     if (p === "") {
       gameboard[a][b] = "missed";
+      gameflow.changeTurn();
       return "missed";
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
