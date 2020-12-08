@@ -44,9 +44,9 @@ export const Gameboard = () => {
       let p = ship.getAllPosition();
       for (let i = 0; i < ship.getLength(); i++) {
         if (ship.getVertical()) {
-          gameboard[p[i][0]][p[i][1]] = ship.getShipId();
+          gameboard[p[i][0]][p[i][1]] = "ship";
         } else {
-          gameboard[p[i][0]][p[i][1]] = ship.getShipId();
+          gameboard[p[i][0]][p[i][1]] = "ship";
         }
       }
     });
@@ -56,16 +56,14 @@ export const Gameboard = () => {
     if (p === "") {
       gameboard[a][b] = "missed";
       return "missed";
-    } else if (p !== "" && p !== "missed") {
+    } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
       ships.map((ship) => {
         if (ship.getShipId() === p) {
           ship.hit([a, b]);
-          return "attacked";
+          return "missed";
         }
       });
-    } else {
-      return false;
     }
   };
 

@@ -1,13 +1,16 @@
 import css from "./style.css";
-import { domManipulation } from "./DOM.js";
-import { Player } from "./Player.js";
-import { Gameboard } from "./Gameboard.js";
+import { domManipulation } from "./components/DOM.js";
+import { Player } from "./components/Player.js";
+import { Gameboard } from "./components/Gameboard.js";
 
 // gameflow module cant have any methods of its own
 const gameflow = (() => {
   let turn = false;
   const changeTurn = () => {
     turn = !turn;
+    if (turn) {
+      PC.attack();
+    }
   };
   const HumanGameboard = Gameboard();
   HumanGameboard.addShip("Carrier", 5, [0, 0], true);
@@ -23,14 +26,13 @@ const gameflow = (() => {
   PCGameboard.addShip("Destroyer", 2, [0, 8], true);
   const Human = Player("Human");
   const PC = Player("PC");
-  if (turn) {
-    PC.attack(1, 1);
-  }
   return {
+    changeTurn,
+    Human,
     HumanGameboard,
     PCGameboard,
   };
 })();
 
-domManipulation();
+domManipulation().createBoards();
 export { gameflow };
