@@ -13,18 +13,15 @@ const Player = (type) => {
       const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
       const g = gameflow.HumanGameboard.getGameboard();
       const randomC = () => [random(), random()];
-      let newArr = randomC();
+      let newArr = [];
       // call recursivelly until value is available
       const newRandomArray = () => {
         const board = gameflow.HumanGameboard.getGameboard();
         console.log(newArr[0], newArr[1]);
-        debugger;
         newArr = randomC();
         if (
-          gameflow.HumanGameboard.getGameboard()[newArr[0]][newArr[1]] ===
-            "attacked" ||
-          gameflow.HumanGameboard.getGameboard()[newArr[0]][newArr[1]] ===
-            "missed"
+          board[newArr[0]][newArr[1]] === "attacked" ||
+          board[newArr[0]][newArr[1]] === "missed"
         ) {
           newRandomArray();
           console.log(newArr, g);

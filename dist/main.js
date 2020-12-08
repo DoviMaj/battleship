@@ -629,7 +629,7 @@ const Gameboard = () => {
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
       ships.map((ship) => {
-        if (ship.getShipId() === p) {
+        if (ship.p.filter((i) => i === [a, b]) ? true : false) {
           ship.hit([a, b]);
           return "missed";
         }
@@ -678,18 +678,15 @@ const Player = (type) => {
       const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
       const g = _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard();
       const randomC = () => [random(), random()];
-      let newArr = randomC();
+      let newArr = [];
       // call recursivelly until value is available
       const newRandomArray = () => {
         const board = _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard();
         console.log(newArr[0], newArr[1]);
-        debugger;
         newArr = randomC();
         if (
-          _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard()[newArr[0]][newArr[1]] ===
-            "attacked" ||
-          _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard()[newArr[0]][newArr[1]] ===
-            "missed"
+          board[newArr[0]][newArr[1]] === "attacked" ||
+          board[newArr[0]][newArr[1]] === "missed"
         ) {
           newRandomArray();
           console.log(newArr, g);

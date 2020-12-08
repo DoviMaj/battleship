@@ -59,7 +59,7 @@ export const Gameboard = () => {
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
       ships.map((ship) => {
-        if (ship.getShipId() === p) {
+        if (ship.p.filter((i) => i === [a, b]) ? true : false) {
           ship.hit([a, b]);
           return "missed";
         }
