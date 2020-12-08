@@ -518,7 +518,6 @@ const domManipulation = () => {
             Number(block.dataset.position[0]),
             Number(block.dataset.position[2])
           );
-          _index_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.changeTurn();
         };
 
         block.addEventListener("click", handleClick, true);
@@ -568,6 +567,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Gameboard": () => /* binding */ Gameboard
 /* harmony export */ });
 /* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ship.js */ "./src/components/Ship.js");
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.js */ "./src/index.js");
+
 
 
 const Gameboard = () => {
@@ -625,6 +626,7 @@ const Gameboard = () => {
     let p = gameboard[a][b];
     if (p === "") {
       gameboard[a][b] = "missed";
+      _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.changeTurn();
       return "missed";
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
@@ -693,7 +695,6 @@ const Player = (type) => {
         } else {
           _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.Human.attack(newArr[0], newArr[1]);
           (0,_DOM_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updateHumanBlock(newArr[0], newArr[1]);
-          _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.changeTurn();
         }
       };
       newRandomArray();
