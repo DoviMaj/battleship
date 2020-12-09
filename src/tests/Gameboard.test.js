@@ -1,4 +1,4 @@
-import { Gameboard } from "../components/Gameboard.js";
+import { Gameboard } from "../modules/Gameboard.js";
 
 it("Gameboard only adds ship if position is available ", () => {
   const a = Gameboard();

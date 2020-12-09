@@ -3,9 +3,13 @@
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*
+/*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
   \*************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, module.id, __webpack_require__.d, __webpack_require__.*, module */
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -21,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  margin-left: 220px;\n  padding: 30px;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* width: 200px; */\n  background: /*linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), */ url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\")\n    no-repeat center center;\n  background-size: cover;\n}\n.human {\n  background: /* linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), */ url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\")\n    no-repeat center center;\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid #ddd;\n  cursor: pointer;\n}\n.block:hover {\n  border: 1px solid red;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,kBAAkB;EAClB,aAAa;AACf;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,kBAAkB;EAClB;2BACyB;EACzB,sBAAsB;AACxB;AACA;EACE;2BACyB;EACzB,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,eAAe;AACjB;AACA;EACE,qBAAqB;AACvB","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  margin-left: 220px;\n  padding: 30px;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* width: 200px; */\n  background: /*linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), */ url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\")\n    no-repeat center center;\n  background-size: cover;\n}\n.human {\n  background: /* linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), */ url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\")\n    no-repeat center center;\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid #ddd;\n  cursor: pointer;\n}\n.block:hover {\n  border: 1px solid red;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  margin-left: 220px;\n  padding: 30px;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid #ddd;\n  cursor: pointer;\n}\n.block:hover {\n  border: 1px solid red;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,kBAAkB;EAClB,aAAa;AACf;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,eAAe;AACjB;AACA;EACE,qBAAqB;AACvB","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  margin-left: 220px;\n  padding: 30px;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid #ddd;\n  cursor: pointer;\n}\n.block:hover {\n  border: 1px solid red;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29,9 +33,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", 
 /***/ }),
 
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*
+/*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
   \*****************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
 /***/ ((module) => {
 
 
@@ -104,9 +110,11 @@ module.exports = function (cssWithMappingToString) {
 /***/ }),
 
 /***/ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js":
-/*!************************************************************************!*
+/*!************************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/cssWithMappingToString.js ***!
   \************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
 /***/ ((module) => {
 
 
@@ -145,9 +153,13 @@ module.exports = function cssWithMappingToString(item) {
 /***/ }),
 
 /***/ "./src/style.css":
-/*!***********************!*
+/*!***********************!*\
   !*** ./src/style.css ***!
   \***********************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -174,9 +186,11 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /***/ }),
 
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*
+/*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
   \****************************************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module, __webpack_require__.nc, __webpack_require__.* */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -451,26 +465,53 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./src/components/DOM.js":
-/*!*******************************!*
-  !*** ./src/components/DOM.js ***!
-  \*******************************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! namespace exports */
+/*! exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _modules_DOM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/DOM.js */ "./src/modules/DOM.js");
+/* harmony import */ var _modules_Gameflow_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Gameflow.js */ "./src/modules/Gameflow.js");
+
+
+
+
+_modules_Gameflow_js__WEBPACK_IMPORTED_MODULE_2__.gameflow.setUpBoards();
+(0,_modules_DOM_js__WEBPACK_IMPORTED_MODULE_1__.domManipulation)().createBoards();
+
+
+/***/ }),
+
+/***/ "./src/modules/DOM.js":
+/*!****************************!*\
+  !*** ./src/modules/DOM.js ***!
+  \****************************/
+/*! namespace exports */
+/*! export domManipulation [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "domManipulation": () => /* binding */ domManipulation
 /* harmony export */ });
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ "./src/index.js");
+/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
 
 
-const domManipulation = () => {
+function domManipulation() {
   const createBoards = () => {
     //Human Board
     const app = document.querySelector(".app");
     const humanBoard = document.createElement("div");
     humanBoard.classList.add("game-board", "human");
-    const hB = _index_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard();
+    const hB = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard();
     hB.forEach((i, index) => {
       const line = document.createElement("div");
       line.classList.add("line");
@@ -490,7 +531,7 @@ const domManipulation = () => {
     //PC Board
     const PCboard = document.createElement("div");
     PCboard.classList.add("game-board", "PC");
-    const pB = _index_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard();
+    const pB = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard();
 
     pB.forEach((i, index) => {
       const line = document.createElement("div");
@@ -508,7 +549,7 @@ const domManipulation = () => {
         }
 
         const handleClick = (e) => {
-          _index_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.receiveAttack(
+          _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.receiveAttack(
             Number(block.dataset.position[0]),
             Number(block.dataset.position[2])
           );
@@ -529,49 +570,61 @@ const domManipulation = () => {
   };
 
   const updatePcBlock = (target, a, b) => {
-    const position = _index_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard()[a][b];
+    const position = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard()[a][b];
     if (position === "attacked") {
-      target.style.backgroundColor = "red";
+      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
+      target.style.backgroundSize = "contain";
     } else {
-      target.style.backgroundColor = "blue";
+      target.style.backgroundImage = `url(
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEX/////AAD/ysr/zs7/lpb/r6//ra3/x8f/tLT/pqb/lJT/kpL/u7v/qqr/oaH/m5v/wcH/f3//ior/09P/4uL/dXX/29v/jo7/6+v/aWn/W1v/enqbYFwKAAACbElEQVRoge2a0WLCIAxFqVWr1mq1m7rt//9zi0gDBUsC4Wk9j2VyegmyAVNqYWGBQX+5fkj19Wgvx9Dzz+qPRsaxgr6+/Od9VYlZGt2Xn+WiG6o631G/urp4LfdXS36WxvR09ZoelZBldFSBadTLWNDRh5qPY/Mq3VGPnQSnsJ0l+BIUIjmAY66lieUAdnmWFcVhWxKqP4wf3s3/YMaIEXMAm1RLQ83hWqIvZLPiOBKzYD02tA8kZKl5OYCOa8Gx2lIdbEud4lBqz6kL1qPjOFhZEnMAe6oFHXuuw7bMTpgsh1InSpYhz0HKkpkDOMUs6DilOqIWEYdS5znLTcZhW7yFTyjHrAUd51zHW4uoQ6l1qC5Yj7WEw84yLk6DbA7gMLUM0jkAHLGumEOp1q4+1uMg6XBGTLzmyLhJQlppR8BSwKHU1XXcSzgmWQo5HEuRsXqCE1l+YgUc4l8Rw2R6FRmwtppQYMQCX0ZxC+YYcF8ptsxrMMfN3r2KZsHl8XmItCmRpXUdRSyHqcO2ZP85pMEcN3woXP21nwPYSmbx6lHA8iaHa0neNmiw5oPfKFT9mRxAJ5ElMHddBEYskgPALOzttWa2HgasC/OgQEPIAWRlidZDwHKmOmwL+RhKg2M1Uw8DzjHigZqGkQNIykKseZaFmQMgnykZWPUwMM/6EnIArCyYg3nBwbAk5nAtkXPLpHoYOpolIwdAyoKOxAsngiUzh2t585roSKiHbwne8uxiL0HjNGcRu8xEi3+Z2YrkcCz+tay5YM6oh8HUxb9g7oVyAK8sgWVf8tL/OYm+Qy2y/77ww/yFv7Dw3/kFTvMTLyVZwXAAAAAASUVORK5CYII="
+      )`;
+      target.style.backgroundSize = "contain";
     }
   };
   const updateHumanBlock = (a, b) => {
     const target = document.getElementById(`${a},${b}`);
-    const position = _index_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard()[a][b];
+    const position = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard()[a][b];
     if (position === "ship") {
-      target.style.backgroundColor = "red";
+      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
+      target.style.backgroundSize = "contain";
     } else {
-      target.style.backgroundColor = "blue";
+      target.style.backgroundImage = `url(
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEX/////AAD/ysr/zs7/lpb/r6//ra3/x8f/tLT/pqb/lJT/kpL/u7v/qqr/oaH/m5v/wcH/f3//ior/09P/4uL/dXX/29v/jo7/6+v/aWn/W1v/enqbYFwKAAACbElEQVRoge2a0WLCIAxFqVWr1mq1m7rt//9zi0gDBUsC4Wk9j2VyegmyAVNqYWGBQX+5fkj19Wgvx9Dzz+qPRsaxgr6+/Od9VYlZGt2Xn+WiG6o631G/urp4LfdXS36WxvR09ZoelZBldFSBadTLWNDRh5qPY/Mq3VGPnQSnsJ0l+BIUIjmAY66lieUAdnmWFcVhWxKqP4wf3s3/YMaIEXMAm1RLQ83hWqIvZLPiOBKzYD02tA8kZKl5OYCOa8Gx2lIdbEud4lBqz6kL1qPjOFhZEnMAe6oFHXuuw7bMTpgsh1InSpYhz0HKkpkDOMUs6DilOqIWEYdS5znLTcZhW7yFTyjHrAUd51zHW4uoQ6l1qC5Yj7WEw84yLk6DbA7gMLUM0jkAHLGumEOp1q4+1uMg6XBGTLzmyLhJQlppR8BSwKHU1XXcSzgmWQo5HEuRsXqCE1l+YgUc4l8Rw2R6FRmwtppQYMQCX0ZxC+YYcF8ptsxrMMfN3r2KZsHl8XmItCmRpXUdRSyHqcO2ZP85pMEcN3woXP21nwPYSmbx6lHA8iaHa0neNmiw5oPfKFT9mRxAJ5ElMHddBEYskgPALOzttWa2HgasC/OgQEPIAWRlidZDwHKmOmwL+RhKg2M1Uw8DzjHigZqGkQNIykKseZaFmQMgnykZWPUwMM/6EnIArCyYg3nBwbAk5nAtkXPLpHoYOpolIwdAyoKOxAsngiUzh2t585roSKiHbwne8uxiL0HjNGcRu8xEi3+Z2YrkcCz+tay5YM6oh8HUxb9g7oVyAK8sgWVf8tL/OYm+Qy2y/77ww/yFv7Dw3/kFTvMTLyVZwXAAAAAASUVORK5CYII="
+      )`;
+      target.style.backgroundSize = "contain";
     }
   };
   return {
     updateHumanBlock,
     createBoards,
   };
-};
+}
 
-
+// export { domManipulation };
 
 
 /***/ }),
 
-/***/ "./src/components/Gameboard.js":
-/*!*************************************!*
-  !*** ./src/components/Gameboard.js ***!
-  \*************************************/
+/***/ "./src/modules/Gameboard.js":
+/*!**********************************!*\
+  !*** ./src/modules/Gameboard.js ***!
+  \**********************************/
+/*! namespace exports */
+/*! export Gameboard [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Gameboard": () => /* binding */ Gameboard
 /* harmony export */ });
-/* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ship.js */ "./src/components/Ship.js");
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.js */ "./src/index.js");
+/* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ship.js */ "./src/modules/Ship.js");
+/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
 
 
 
-const Gameboard = () => {
+function Gameboard() {
   const ships = [];
   const gameboard = [
     ["", "", "", "", "", "", "", "", "", ""],
@@ -626,7 +679,7 @@ const Gameboard = () => {
     let p = gameboard[a][b];
     if (p === "") {
       gameboard[a][b] = "missed";
-      _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.changeTurn();
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.changeTurn();
       return "missed";
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
@@ -648,23 +701,84 @@ const Gameboard = () => {
     getGameboard,
     receiveAttack,
   };
-};
+}
 
 
 /***/ }),
 
-/***/ "./src/components/Player.js":
-/*!**********************************!*
-  !*** ./src/components/Player.js ***!
-  \**********************************/
+/***/ "./src/modules/Gameflow.js":
+/*!*********************************!*\
+  !*** ./src/modules/Gameflow.js ***!
+  \*********************************/
+/*! namespace exports */
+/*! export gameflow [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "gameflow": () => /* binding */ gameflow
+/* harmony export */ });
+/* harmony import */ var _Gameboard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Gameboard.js */ "./src/modules/Gameboard.js");
+/* harmony import */ var _Player_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Player.js */ "./src/modules/Player.js");
+
+
+
+const gameflow = (() => {
+  let turn = false;
+  const changeTurn = () => {
+    turn = !turn;
+    if (turn) {
+      PC.attack();
+    }
+  };
+  const HumanGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_0__.Gameboard)();
+  const PCGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_0__.Gameboard)();
+  const Human = (0,_Player_js__WEBPACK_IMPORTED_MODULE_1__.Player)("Human");
+  const PC = (0,_Player_js__WEBPACK_IMPORTED_MODULE_1__.Player)("PC");
+  const setUpBoards = () => {
+    HumanGameboard.addShip("Carrier", 5, [0, 0], true);
+    HumanGameboard.addShip("Battleship", 4, [3, 3], false);
+    HumanGameboard.addShip("Cruiser", 3, [7, 0], true);
+    HumanGameboard.addShip("Submarine", 3, [0, 4], false);
+    HumanGameboard.addShip("Destroyer", 2, [0, 8], true);
+    PCGameboard.addShip("Carrier", 5, [0, 0], true);
+    PCGameboard.addShip("Battleship", 4, [3, 4], false);
+    PCGameboard.addShip("Cruiser", 3, [7, 0], true);
+    PCGameboard.addShip("Submarine", 3, [0, 4], false);
+    PCGameboard.addShip("Destroyer", 2, [0, 8], true);
+  };
+
+  return {
+    setUpBoards,
+    changeTurn,
+    Human,
+    HumanGameboard,
+    PCGameboard,
+  };
+})();
+
+
+/***/ }),
+
+/***/ "./src/modules/Player.js":
+/*!*******************************!*\
+  !*** ./src/modules/Player.js ***!
+  \*******************************/
+/*! namespace exports */
+/*! export Player [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Player": () => /* binding */ Player
 /* harmony export */ });
-/* harmony import */ var _DOM_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM.js */ "./src/components/DOM.js");
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.js */ "./src/index.js");
+/* harmony import */ var _DOM_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOM.js */ "./src/modules/DOM.js");
+/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
+
 
 
 // player can attack other player gameboard (x)
@@ -672,28 +786,25 @@ __webpack_require__.r(__webpack_exports__);
 // AI cant attack same cordinate twice (x)
 // only allow play when turn is his ()
 
-const Player = (type) => {
+function Player(type) {
   const attack = (a, b) => {
     if (type === "Human") {
-      _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.PCGameboard.receiveAttack(a, b);
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.PCGameboard.receiveAttack(a, b);
     } else {
       const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
-      const g = _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard();
       const randomC = () => [random(), random()];
       let newArr = [];
       // call recursivelly until value is available
       const newRandomArray = () => {
-        const board = _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard();
-        console.log(newArr[0], newArr[1]);
+        const board = _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard();
         newArr = randomC();
         if (
           board[newArr[0]][newArr[1]] === "attacked" ||
           board[newArr[0]][newArr[1]] === "missed"
         ) {
           newRandomArray();
-          console.log(newArr, g);
         } else {
-          _index_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.Human.attack(newArr[0], newArr[1]);
+          _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.Human.attack(newArr[0], newArr[1]);
           (0,_DOM_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updateHumanBlock(newArr[0], newArr[1]);
         }
       };
@@ -703,17 +814,21 @@ const Player = (type) => {
   return {
     attack,
   };
-};
+}
 
-
+// export { Player };
 
 
 /***/ }),
 
-/***/ "./src/components/Ship.js":
-/*!********************************!*
-  !*** ./src/components/Ship.js ***!
-  \********************************/
+/***/ "./src/modules/Ship.js":
+/*!*****************************!*\
+  !*** ./src/modules/Ship.js ***!
+  \*****************************/
+/*! namespace exports */
+/*! export Ship [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -756,62 +871,6 @@ const Ship = (id, length, p, vertical) => {
   };
 };
 
-
-
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "gameflow": () => /* binding */ gameflow
-/* harmony export */ });
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _components_DOM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/DOM.js */ "./src/components/DOM.js");
-/* harmony import */ var _components_Player_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Player.js */ "./src/components/Player.js");
-/* harmony import */ var _components_Gameboard_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Gameboard.js */ "./src/components/Gameboard.js");
-
-
-
-
-
-// gameflow module cant have any methods of its own
-const gameflow = (() => {
-  let turn = false;
-  const changeTurn = () => {
-    turn = !turn;
-    if (turn) {
-      PC.attack();
-    }
-  };
-  const HumanGameboard = (0,_components_Gameboard_js__WEBPACK_IMPORTED_MODULE_3__.Gameboard)();
-  HumanGameboard.addShip("Carrier", 5, [0, 0], true);
-  HumanGameboard.addShip("Battleship", 4, [3, 3], false);
-  HumanGameboard.addShip("Cruiser", 3, [7, 0], true);
-  HumanGameboard.addShip("Submarine", 3, [0, 4], false);
-  HumanGameboard.addShip("Destroyer", 2, [0, 8], true);
-  const PCGameboard = (0,_components_Gameboard_js__WEBPACK_IMPORTED_MODULE_3__.Gameboard)();
-  PCGameboard.addShip("Carrier", 5, [0, 0], true);
-  PCGameboard.addShip("Battleship", 4, [3, 4], false);
-  PCGameboard.addShip("Cruiser", 3, [7, 0], true);
-  PCGameboard.addShip("Submarine", 3, [0, 4], false);
-  PCGameboard.addShip("Destroyer", 2, [0, 8], true);
-  const Human = (0,_components_Player_js__WEBPACK_IMPORTED_MODULE_2__.Player)("Human");
-  const PC = (0,_components_Player_js__WEBPACK_IMPORTED_MODULE_2__.Player)("PC");
-  return {
-    changeTurn,
-    Human,
-    HumanGameboard,
-    PCGameboard,
-  };
-})();
-
-(0,_components_DOM_js__WEBPACK_IMPORTED_MODULE_1__.domManipulation)().createBoards();
 
 
 
@@ -886,8 +945,8 @@ const gameflow = (() => {
 /************************************************************************/
 /******/ 	// startup
 /******/ 	// Load entry module
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	__webpack_require__("./src/index.js");
+/******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map

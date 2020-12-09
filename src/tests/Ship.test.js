@@ -1,4 +1,4 @@
-import { Ship } from "../components/Ship.js";
+import { Ship } from "../modules/Ship.js";
 
 it("Ship hasSunk and hit works", () => {
   const a = Ship(

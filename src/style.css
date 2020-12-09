@@ -12,14 +12,13 @@ h3 {
   justify-content: center;
 }
 .PC {
-  /* width: 200px; */
-  background: /*linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), */ url("https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o")
-    no-repeat center center;
+  /* background: url("https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o") */
+  /* no-repeat center center; */
   background-size: cover;
 }
 .human {
-  background: /* linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), */ url("https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA")
-    no-repeat center center;
+  /* background: url("https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA") */
+  /* no-repeat center center; */
   background-size: cover;
 }
 

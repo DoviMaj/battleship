@@ -1,7 +1,7 @@
 import { Ship } from "./Ship.js";
-import { gameflow } from "../index.js";
+import { gameflow } from "./Gameflow.js";
 
-export const Gameboard = () => {
+export function Gameboard() {
   const ships = [];
   const gameboard = [
     ["", "", "", "", "", "", "", "", "", ""],
@@ -78,4 +78,4 @@ export const Gameboard = () => {
     getGameboard,
     receiveAttack,
   };
-};
+}
