@@ -26,7 +26,7 @@ it("Gameboard adds ships horizontaly", () => {
   expect(g[0][0] && g[0][1]).toBe("ship");
 });
 
-it("Gameboard keeps track of sucessful attacks", () => {
+it("Gameboard sucessful attack", () => {
   const a = Gameboard();
   a.addShip("w", 2, [0, 0], false);
   a.receiveAttack(0, 0);
@@ -35,7 +35,7 @@ it("Gameboard keeps track of sucessful attacks", () => {
   expect(g[0][0]).toBe("attacked");
 });
 
-it("Gameboard keeps track of missed attacks", () => {
+it("Gameboard missed attack", () => {
   const a = Gameboard();
   a.addShip("w", 2, [0, 0], false);
   a.receiveAttack(1, 0);

@@ -25,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  margin-left: 220px;\n  padding: 30px;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid #ddd;\n  cursor: pointer;\n}\n.block:hover {\n  border: 1px solid red;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,kBAAkB;EAClB,aAAa;AACf;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,eAAe;AACjB;AACA;EACE,qBAAqB;AACvB","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  margin-left: 220px;\n  padding: 30px;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid #ddd;\n  cursor: pointer;\n}\n.block:hover {\n  border: 1px solid red;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 25px;\n  height: 25px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,WAAW;AACb;AACA;EACE,sBAAsB;AACxB","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\nh3 {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 25px;\n  height: 25px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -549,18 +549,13 @@ function domManipulation() {
         }
 
         const handleClick = (e) => {
-          _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.receiveAttack(
+          debugger;
+          _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.Human.attack(
             Number(block.dataset.position[0]),
             Number(block.dataset.position[2])
           );
           e.target.removeEventListener("click", handleClick, true);
-          updatePcBlock(
-            e.target,
-            Number(block.dataset.position[0]),
-            Number(block.dataset.position[2])
-          );
         };
-
         block.addEventListener("click", handleClick, true);
         line.append(block);
       });
@@ -569,38 +564,44 @@ function domManipulation() {
     app.append(humanBoard, PCboard);
   };
 
-  const updatePcBlock = (target, a, b) => {
+  const updatePcBlock = (a, b) => {
+    debugger;
     const position = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard()[a][b];
+    const node = document.querySelectorAll(`[data-position*="${a},${b}"]`);
+    const target = node[node.length - 1];
+    if (target === null) {
+      return;
+    }
     if (position === "attacked") {
-      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
-      target.style.backgroundSize = "contain";
-    } else {
       target.style.backgroundImage = `url(
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEX/////AAD/ysr/zs7/lpb/r6//ra3/x8f/tLT/pqb/lJT/kpL/u7v/qqr/oaH/m5v/wcH/f3//ior/09P/4uL/dXX/29v/jo7/6+v/aWn/W1v/enqbYFwKAAACbElEQVRoge2a0WLCIAxFqVWr1mq1m7rt//9zi0gDBUsC4Wk9j2VyegmyAVNqYWGBQX+5fkj19Wgvx9Dzz+qPRsaxgr6+/Od9VYlZGt2Xn+WiG6o631G/urp4LfdXS36WxvR09ZoelZBldFSBadTLWNDRh5qPY/Mq3VGPnQSnsJ0l+BIUIjmAY66lieUAdnmWFcVhWxKqP4wf3s3/YMaIEXMAm1RLQ83hWqIvZLPiOBKzYD02tA8kZKl5OYCOa8Gx2lIdbEud4lBqz6kL1qPjOFhZEnMAe6oFHXuuw7bMTpgsh1InSpYhz0HKkpkDOMUs6DilOqIWEYdS5znLTcZhW7yFTyjHrAUd51zHW4uoQ6l1qC5Yj7WEw84yLk6DbA7gMLUM0jkAHLGumEOp1q4+1uMg6XBGTLzmyLhJQlppR8BSwKHU1XXcSzgmWQo5HEuRsXqCE1l+YgUc4l8Rw2R6FRmwtppQYMQCX0ZxC+YYcF8ptsxrMMfN3r2KZsHl8XmItCmRpXUdRSyHqcO2ZP85pMEcN3woXP21nwPYSmbx6lHA8iaHa0neNmiw5oPfKFT9mRxAJ5ElMHddBEYskgPALOzttWa2HgasC/OgQEPIAWRlidZDwHKmOmwL+RhKg2M1Uw8DzjHigZqGkQNIykKseZaFmQMgnykZWPUwMM/6EnIArCyYg3nBwbAk5nAtkXPLpHoYOpolIwdAyoKOxAsngiUzh2t585roSKiHbwne8uxiL0HjNGcRu8xEi3+Z2YrkcCz+tay5YM6oh8HUxb9g7oVyAK8sgWVf8tL/OYm+Qy2y/77ww/yFv7Dw3/kFTvMTLyVZwXAAAAAASUVORK5CYII="
       )`;
+      target.style.backgroundSize = "contain";
+    } else {
+      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
       target.style.backgroundSize = "contain";
     }
   };
   const updateHumanBlock = (a, b) => {
+    debugger;
     const target = document.getElementById(`${a},${b}`);
     const position = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard()[a][b];
     if (position === "ship") {
-      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
-      target.style.backgroundSize = "contain";
-    } else {
       target.style.backgroundImage = `url(
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEX/////AAD/ysr/zs7/lpb/r6//ra3/x8f/tLT/pqb/lJT/kpL/u7v/qqr/oaH/m5v/wcH/f3//ior/09P/4uL/dXX/29v/jo7/6+v/aWn/W1v/enqbYFwKAAACbElEQVRoge2a0WLCIAxFqVWr1mq1m7rt//9zi0gDBUsC4Wk9j2VyegmyAVNqYWGBQX+5fkj19Wgvx9Dzz+qPRsaxgr6+/Od9VYlZGt2Xn+WiG6o631G/urp4LfdXS36WxvR09ZoelZBldFSBadTLWNDRh5qPY/Mq3VGPnQSnsJ0l+BIUIjmAY66lieUAdnmWFcVhWxKqP4wf3s3/YMaIEXMAm1RLQ83hWqIvZLPiOBKzYD02tA8kZKl5OYCOa8Gx2lIdbEud4lBqz6kL1qPjOFhZEnMAe6oFHXuuw7bMTpgsh1InSpYhz0HKkpkDOMUs6DilOqIWEYdS5znLTcZhW7yFTyjHrAUd51zHW4uoQ6l1qC5Yj7WEw84yLk6DbA7gMLUM0jkAHLGumEOp1q4+1uMg6XBGTLzmyLhJQlppR8BSwKHU1XXcSzgmWQo5HEuRsXqCE1l+YgUc4l8Rw2R6FRmwtppQYMQCX0ZxC+YYcF8ptsxrMMfN3r2KZsHl8XmItCmRpXUdRSyHqcO2ZP85pMEcN3woXP21nwPYSmbx6lHA8iaHa0neNmiw5oPfKFT9mRxAJ5ElMHddBEYskgPALOzttWa2HgasC/OgQEPIAWRlidZDwHKmOmwL+RhKg2M1Uw8DzjHigZqGkQNIykKseZaFmQMgnykZWPUwMM/6EnIArCyYg3nBwbAk5nAtkXPLpHoYOpolIwdAyoKOxAsngiUzh2t585roSKiHbwne8uxiL0HjNGcRu8xEi3+Z2YrkcCz+tay5YM6oh8HUxb9g7oVyAK8sgWVf8tL/OYm+Qy2y/77ww/yFv7Dw3/kFTvMTLyVZwXAAAAAASUVORK5CYII="
       )`;
       target.style.backgroundSize = "contain";
+    } else {
+      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
+      target.style.backgroundSize = "contain";
     }
   };
   return {
+    updatePcBlock,
     updateHumanBlock,
     createBoards,
   };
 }
-
-// export { domManipulation };
 
 
 /***/ }),
@@ -620,8 +621,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Gameboard": () => /* binding */ Gameboard
 /* harmony export */ });
 /* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ship.js */ "./src/modules/Ship.js");
-/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
-
 
 
 function Gameboard() {
@@ -679,7 +678,6 @@ function Gameboard() {
     let p = gameboard[a][b];
     if (p === "") {
       gameboard[a][b] = "missed";
-      _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.changeTurn();
       return "missed";
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
@@ -731,6 +729,7 @@ const gameflow = (() => {
     turn = !turn;
     if (turn) {
       PC.attack();
+      domManipulation().updateHumanBlock(newArr[0], newArr[1]);
     }
   };
   const HumanGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_0__.Gameboard)();
@@ -749,11 +748,11 @@ const gameflow = (() => {
     PCGameboard.addShip("Submarine", 3, [0, 4], false);
     PCGameboard.addShip("Destroyer", 2, [0, 8], true);
   };
-
   return {
     setUpBoards,
     changeTurn,
     Human,
+    PC,
     HumanGameboard,
     PCGameboard,
   };
@@ -790,26 +789,26 @@ function Player(type) {
   const attack = (a, b) => {
     if (type === "Human") {
       _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.PCGameboard.receiveAttack(a, b);
+      (0,_DOM_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updatePcBlock(a, b);
+      // gameflow.changeTurn();
     } else {
-      const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
-      const randomC = () => [random(), random()];
-      let newArr = [];
-      // call recursivelly until value is available
-      const newRandomArray = () => {
-        const board = _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.getGameboard();
-        newArr = randomC();
-        if (
-          board[newArr[0]][newArr[1]] === "attacked" ||
-          board[newArr[0]][newArr[1]] === "missed"
-        ) {
-          newRandomArray();
-        } else {
-          _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.Human.attack(newArr[0], newArr[1]);
-          (0,_DOM_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updateHumanBlock(newArr[0], newArr[1]);
-        }
-      };
-      newRandomArray();
+      handlePcAttack();
     }
+  };
+  const calledPositions = [];
+  const handlePcAttack = () => {
+    const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
+    const randomArr = () => [random(), random()];
+    const randomPositionNotUsedYet = () => {
+      let newArr = randomArr();
+      if (calledPositions.includes(newArr)) {
+        randomPositionNotUsedYet();
+      } else {
+        calledPositions.push(newArr);
+        _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.receiveAttack(newArr[0], newArr[1]);
+      }
+    };
+    randomPositionNotUsedYet();
   };
   return {
     attack,

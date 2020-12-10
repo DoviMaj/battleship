@@ -7,6 +7,7 @@ export const gameflow = (() => {
     turn = !turn;
     if (turn) {
       PC.attack();
+      domManipulation().updateHumanBlock(newArr[0], newArr[1]);
     }
   };
   const HumanGameboard = Gameboard();
@@ -25,11 +26,11 @@ export const gameflow = (() => {
     PCGameboard.addShip("Submarine", 3, [0, 4], false);
     PCGameboard.addShip("Destroyer", 2, [0, 8], true);
   };
-
   return {
     setUpBoards,
     changeTurn,
     Human,
+    PC,
     HumanGameboard,
     PCGameboard,
   };

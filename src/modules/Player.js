@@ -10,26 +10,26 @@ export function Player(type) {
   const attack = (a, b) => {
     if (type === "Human") {
       gameflow.PCGameboard.receiveAttack(a, b);
+      domManipulation().updatePcBlock(a, b);
+      // gameflow.changeTurn();
     } else {
-      const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
-      const randomC = () => [random(), random()];
-      let newArr = [];
-      // call recursivelly until value is available
-      const newRandomArray = () => {
-        const board = gameflow.HumanGameboard.getGameboard();
-        newArr = randomC();
-        if (
-          board[newArr[0]][newArr[1]] === "attacked" ||
-          board[newArr[0]][newArr[1]] === "missed"
-        ) {
-          newRandomArray();
-        } else {
-          gameflow.Human.attack(newArr[0], newArr[1]);
-          domManipulation().updateHumanBlock(newArr[0], newArr[1]);
-        }
-      };
-      newRandomArray();
+      handlePcAttack();
     }
+  };
+  const calledPositions = [];
+  const handlePcAttack = () => {
+    const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
+    const randomArr = () => [random(), random()];
+    const randomPositionNotUsedYet = () => {
+      let newArr = randomArr();
+      if (calledPositions.includes(newArr)) {
+        randomPositionNotUsedYet();
+      } else {
+        calledPositions.push(newArr);
+        gameflow.HumanGameboard.receiveAttack(newArr[0], newArr[1]);
+      }
+    };
+    randomPositionNotUsedYet();
   };
   return {
     attack,

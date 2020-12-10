@@ -1,10 +1,5 @@
 {
   "name": "battelship-game-vanilla",
-  "jest": {
-    "moduleNameMapper": {
-      "^.+\\.(css|less)$": "<rootDir>/config/CSSStub.js"
-    }
-  },
   "version": "1.0.0",
   "description": "",
   "mode": "development",
