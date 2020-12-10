@@ -25,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\n.title {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n  display: none;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,WAAW;AACb;AACA;EACE,sBAAsB;AACxB;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,aAAa;EACb,uBAAuB;EACvB,iBAAiB;EACjB,mBAAmB;EACnB,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,OAAO;EACP,MAAM;EACN,eAAe;EACf,oCAAoC;EACpC,YAAY;EACZ,cAAc;EACd,aAAa;EACb,uBAAuB;EACvB,aAAa;AACf;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,cAAc;AAChB","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\n.title {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n  display: none;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\n.title {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n  display: none;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  margin-bottom: 30px;\n  gap: 20px;\n}\n\n.hide {\n  display: none;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,WAAW;AACb;AACA;EACE,sBAAsB;AACxB;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,aAAa;EACb,uBAAuB;EACvB,iBAAiB;EACjB,mBAAmB;EACnB,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,OAAO;EACP,MAAM;EACN,eAAe;EACf,oCAAoC;EACpC,YAAY;EACZ,cAAc;EACd,aAAa;EACb,uBAAuB;EACvB,aAAa;AACf;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,aAAa;AACf","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\n.title {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n  display: none;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  margin-bottom: 30px;\n  gap: 20px;\n}\n\n.hide {\n  display: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -488,7 +488,7 @@ const gameSetUp = () => {
 };
 
 const startGame = () => {
-  (0,_modules_DomManipulation_js__WEBPACK_IMPORTED_MODULE_1__.domManipulation)().addEventListeners();
+  (0,_modules_DomManipulation_js__WEBPACK_IMPORTED_MODULE_1__.domManipulation)().addButtonsEventListeners();
 };
 
 const restartGame = () => {};
@@ -517,7 +517,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function domManipulation() {
-  const addEventListeners = () => {
+  const addButtonsEventListeners = () => {
+    const startGameButton = document.querySelector(".start-game-button");
+    const startGame = () => {
+      addBoardEventListeners();
+      document.querySelector(".buttons").classList.add("hide");
+    };
+    startGameButton.addEventListener("click", startGame);
+    const randomizeButton = document.querySelector(".randomize");
+    const randomize = () => {
+      document.querySelector(".app").innerHTML = "";
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.resetBoards();
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.populateBoards();
+      domManipulation().createBoards();
+    };
+    randomizeButton.addEventListener("click", randomize);
+  };
+
+  const addBoardEventListeners = () => {
     const handleClick = (e) => {
       _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.Human.attack(
         Number(e.target.dataset.position[0]),
@@ -614,7 +631,7 @@ function domManipulation() {
 
   const displayNotification = () => {};
   return {
-    addEventListeners,
+    addButtonsEventListeners,
     displayNotification,
     updatePcBlock,
     updateHumanBlock,
@@ -639,12 +656,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Gameboard": () => /* binding */ Gameboard
 /* harmony export */ });
-/* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ship.js */ "./src/modules/Ship.js");
+/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
+/* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Ship.js */ "./src/modules/Ship.js");
+
 
 
 function Gameboard() {
-  const ships = [];
-  const gameboard = [
+  let ships = [];
+  let gameboard = [
     ["", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", ""],
@@ -658,7 +677,6 @@ function Gameboard() {
   ];
 
   const positionsAvailable = (p) => {
-    debugger;
     const g = getGameboard();
     const condition = (pos) => {
       if (pos[0] > 9 || pos[1] > 9) return false;
@@ -674,8 +692,6 @@ function Gameboard() {
         return true;
       }
     });
-
-    console.log(g);
     return canBeAdded;
   };
 
@@ -692,7 +708,7 @@ function Gameboard() {
   };
 
   const addShip = (id, length, allPositions, vertical) => {
-    ships.push((0,_Ship_js__WEBPACK_IMPORTED_MODULE_0__.Ship)(id, length, allPositions, vertical));
+    ships.push((0,_Ship_js__WEBPACK_IMPORTED_MODULE_1__.Ship)(id, length, allPositions, vertical));
     updateGameboard();
   };
 
@@ -764,13 +780,11 @@ function Gameboard() {
 
     shipsData.forEach((ship) => {
       const checkIfCanBeAddedToGameboard = () => {
-        debugger;
         let allPositions = generateAllPositions(
           ship.position,
           ship.length,
           ship.vertical
         );
-        console.log(positionsAvailable(allPositions));
         if (positionsAvailable(allPositions)) {
           addShip(ship.id, ship.length, allPositions, ship.vertical);
         } else {
@@ -781,22 +795,28 @@ function Gameboard() {
       };
       checkIfCanBeAddedToGameboard();
     });
-    // HumanGameboard.addShip("Carrier", 5, [0, 0], true);
-    // HumanGameboard.addShip("Battleship", 4, [3, 3], false);
-    // HumanGameboard.addShip("Cruiser", 3, [7, 0], true);
-    // HumanGameboard.addShip("Submarine", 3, [0, 4], false);
-    // HumanGameboard.addShip("Destroyer", 2, [0, 8], true);
-    // PCGameboard.addShip("Carrier", 5, [0, 0], true);
-    // PCGameboard.addShip("Battleship", 4, [3, 4], false);
-    // PCGameboard.addShip("Cruiser", 3, [7, 0], true);
-    // PCGameboard.addShip("Submarine", 3, [0, 4], false);
-    // PCGameboard.addShip("Destroyer", 2, [0, 8], true);
   };
 
   const haveAllSunk = () => ships.every((ship) => ship.hasSunk());
   const getGameboard = () => gameboard;
-
+  const resetBoard = () => {
+    debugger;
+    gameboard = [
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+    ];
+    ships = [];
+  };
   return {
+    resetBoard,
     addShipsRandomly,
     haveAllSunk,
     addShip,
@@ -851,7 +871,12 @@ const gameflow = (() => {
     PCGameboard.addShipsRandomly();
     HumanGameboard.addShipsRandomly();
   };
+  const resetBoards = () => {
+    PCGameboard.resetBoard();
+    HumanGameboard.resetBoard();
+  };
   return {
+    resetBoards,
     populateBoards,
     changeTurn,
     Human,

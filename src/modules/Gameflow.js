@@ -24,7 +24,12 @@ export const gameflow = (() => {
     PCGameboard.addShipsRandomly();
     HumanGameboard.addShipsRandomly();
   };
+  const resetBoards = () => {
+    PCGameboard.resetBoard();
+    HumanGameboard.resetBoard();
+  };
   return {
+    resetBoards,
     populateBoards,
     changeTurn,
     Human,

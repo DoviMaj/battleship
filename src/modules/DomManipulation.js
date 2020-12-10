@@ -1,7 +1,24 @@
 import { gameflow } from "./Gameflow.js";
 
 export function domManipulation() {
-  const addEventListeners = () => {
+  const addButtonsEventListeners = () => {
+    const startGameButton = document.querySelector(".start-game-button");
+    const startGame = () => {
+      addBoardEventListeners();
+      document.querySelector(".buttons").classList.add("hide");
+    };
+    startGameButton.addEventListener("click", startGame);
+    const randomizeButton = document.querySelector(".randomize");
+    const randomize = () => {
+      document.querySelector(".app").innerHTML = "";
+      gameflow.resetBoards();
+      gameflow.populateBoards();
+      domManipulation().createBoards();
+    };
+    randomizeButton.addEventListener("click", randomize);
+  };
+
+  const addBoardEventListeners = () => {
     const handleClick = (e) => {
       gameflow.Human.attack(
         Number(e.target.dataset.position[0]),
@@ -98,7 +115,7 @@ export function domManipulation() {
 
   const displayNotification = () => {};
   return {
-    addEventListeners,
+    addButtonsEventListeners,
     displayNotification,
     updatePcBlock,
     updateHumanBlock,

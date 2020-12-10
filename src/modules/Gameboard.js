@@ -1,8 +1,9 @@
+import { gameflow } from "./Gameflow.js";
 import { Ship } from "./Ship.js";
 
 export function Gameboard() {
-  const ships = [];
-  const gameboard = [
+  let ships = [];
+  let gameboard = [
     ["", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", ""],
@@ -16,7 +17,6 @@ export function Gameboard() {
   ];
 
   const positionsAvailable = (p) => {
-    debugger;
     const g = getGameboard();
     const condition = (pos) => {
       if (pos[0] > 9 || pos[1] > 9) return false;
@@ -32,8 +32,6 @@ export function Gameboard() {
         return true;
       }
     });
-
-    console.log(g);
     return canBeAdded;
   };
 
@@ -122,13 +120,11 @@ export function Gameboard() {
 
     shipsData.forEach((ship) => {
       const checkIfCanBeAddedToGameboard = () => {
-        debugger;
         let allPositions = generateAllPositions(
           ship.position,
           ship.length,
           ship.vertical
         );
-        console.log(positionsAvailable(allPositions));
         if (positionsAvailable(allPositions)) {
           addShip(ship.id, ship.length, allPositions, ship.vertical);
         } else {
@@ -139,22 +135,28 @@ export function Gameboard() {
       };
       checkIfCanBeAddedToGameboard();
     });
-    // HumanGameboard.addShip("Carrier", 5, [0, 0], true);
-    // HumanGameboard.addShip("Battleship", 4, [3, 3], false);
-    // HumanGameboard.addShip("Cruiser", 3, [7, 0], true);
-    // HumanGameboard.addShip("Submarine", 3, [0, 4], false);
-    // HumanGameboard.addShip("Destroyer", 2, [0, 8], true);
-    // PCGameboard.addShip("Carrier", 5, [0, 0], true);
-    // PCGameboard.addShip("Battleship", 4, [3, 4], false);
-    // PCGameboard.addShip("Cruiser", 3, [7, 0], true);
-    // PCGameboard.addShip("Submarine", 3, [0, 4], false);
-    // PCGameboard.addShip("Destroyer", 2, [0, 8], true);
   };
 
   const haveAllSunk = () => ships.every((ship) => ship.hasSunk());
   const getGameboard = () => gameboard;
-
+  const resetBoard = () => {
+    debugger;
+    gameboard = [
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", ""],
+    ];
+    ships = [];
+  };
   return {
+    resetBoard,
     addShipsRandomly,
     haveAllSunk,
     addShip,

@@ -8,7 +8,7 @@ const gameSetUp = () => {
 };
 
 const startGame = () => {
-  domManipulation().addEventListeners();
+  domManipulation().addButtonsEventListeners();
 };
 
 const restartGame = () => {};
