@@ -11,22 +11,28 @@ export function Player(type) {
     if (type === "Human") {
       gameflow.PCGameboard.receiveAttack(a, b);
       domManipulation().updatePcBlock(a, b);
+      gameflow.changeTurn();
       // gameflow.changeTurn();
     } else {
       handlePcAttack();
     }
   };
-  const calledPositions = [];
+  const usedPositions = [];
   const handlePcAttack = () => {
     const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
     const randomArr = () => [random(), random()];
     const randomPositionNotUsedYet = () => {
       let newArr = randomArr();
-      if (calledPositions.includes(newArr)) {
+      const checkIfArrayWasCalled = () =>
+        usedPositions.some((i) => JSON.stringify(i) === JSON.stringify(newArr));
+
+      console.log(checkIfArrayWasCalled());
+      if (checkIfArrayWasCalled()) {
         randomPositionNotUsedYet();
       } else {
-        calledPositions.push(newArr);
+        usedPositions.push(newArr);
         gameflow.HumanGameboard.receiveAttack(newArr[0], newArr[1]);
+        domManipulation().updateHumanBlock(newArr[0], newArr[1]);
       }
     };
     randomPositionNotUsedYet();

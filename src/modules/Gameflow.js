@@ -7,7 +7,6 @@ export const gameflow = (() => {
     turn = !turn;
     if (turn) {
       PC.attack();
-      domManipulation().updateHumanBlock(newArr[0], newArr[1]);
     }
   };
   const HumanGameboard = Gameboard();

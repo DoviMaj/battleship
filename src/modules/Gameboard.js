@@ -59,7 +59,7 @@ export function Gameboard() {
     } else if (p !== "missed") {
       gameboard[a][b] = "attacked";
       ships.map((ship) => {
-        if (ship.p.filter((i) => i === [a, b]) ? true : false) {
+        if (ship.p.filter((i) => i === [a, b])) {
           ship.hit([a, b]);
           return "missed";
         }
