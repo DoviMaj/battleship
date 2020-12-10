@@ -1,20 +1,14 @@
-import { domManipulation } from "./DOM.js";
+import { domManipulation } from "./DomManipulation.js";
 import { gameflow } from "./Gameflow.js";
-
-// player can attack other player gameboard (x)
-// AI can make random moves (x)
-// AI cant attack same cordinate twice (x)
-// only allow play when turn is his ()
 
 export function Player(type) {
   const attack = (a, b) => {
     if (type === "Human") {
       gameflow.PCGameboard.receiveAttack(a, b);
       domManipulation().updatePcBlock(a, b);
-      gameflow.changeTurn();
-      // gameflow.changeTurn();
     } else {
       handlePcAttack();
+      gameflow.changeTurn();
     }
   };
   const usedPositions = [];
@@ -26,7 +20,6 @@ export function Player(type) {
       const checkIfArrayWasCalled = () =>
         usedPositions.some((i) => JSON.stringify(i) === JSON.stringify(newArr));
 
-      console.log(checkIfArrayWasCalled());
       if (checkIfArrayWasCalled()) {
         randomPositionNotUsedYet();
       } else {
@@ -41,5 +34,3 @@ export function Player(type) {
     attack,
   };
 }
-
-// export { Player };

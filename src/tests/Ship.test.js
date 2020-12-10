@@ -1,6 +1,6 @@
 import { Ship } from "../modules/Ship.js";
 
-it("Ship hasSunk and hit works", () => {
+it("Ship hasSunk() and hit() works", () => {
   const a = Ship(
     "w",
     1,
@@ -12,6 +12,5 @@ it("Ship hasSunk and hit works", () => {
   );
   a.hit([0, 0]);
   a.hit([1, 0]);
-  // expect(a.ship).toBe();
   expect(a.hasSunk()).toBeTruthy();
 });

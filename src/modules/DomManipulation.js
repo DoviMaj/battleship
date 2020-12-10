@@ -1,6 +1,20 @@
 import { gameflow } from "./Gameflow.js";
 
 export function domManipulation() {
+  const addEventListeners = () => {
+    const handleClick = (e) => {
+      gameflow.Human.attack(
+        Number(e.target.dataset.position[0]),
+        Number(e.target.dataset.position[2])
+      );
+      e.target.removeEventListener("click", handleClick, true);
+      gameflow.changeTurn();
+    };
+    const allPcBlocks = document.querySelectorAll(".PC .block");
+    allPcBlocks.forEach((block) => {
+      block.addEventListener("click", handleClick, true);
+    });
+  };
   const createBoards = () => {
     //Human Board
     const app = document.querySelector(".app");
@@ -17,7 +31,6 @@ export function domManipulation() {
         if (item !== "") {
           block.style.backgroundColor = "gray";
         }
-        block.id = `${[index, ix]}`;
         line.append(block);
       });
       humanBoard.append(line);
@@ -42,16 +55,6 @@ export function domManipulation() {
         if (item === "missed") {
           block.style.backgroundColor = "red";
         }
-
-        const handleClick = (e) => {
-          gameflow.Human.attack(
-            Number(block.dataset.position[0]),
-            Number(block.dataset.position[2])
-          );
-          e.target.removeEventListener("click", handleClick, true);
-          gameflow.changeTurn();
-        };
-        block.addEventListener("click", handleClick, true);
         line.append(block);
       });
       PCboard.append(line);
@@ -61,7 +64,6 @@ export function domManipulation() {
 
   const updatePcBlock = (a, b) => {
     const position = gameflow.PCGameboard.getGameboard()[a][b];
-    console.log(gameflow.PCGameboard.getGameboard()[a][b]);
     const node = document.querySelectorAll(`[data-position*="${a},${b}"]`);
     const target = node[node.length - 1];
     if (target === undefined) {
@@ -78,7 +80,7 @@ export function domManipulation() {
     }
   };
   const updateHumanBlock = (a, b) => {
-    const target = document.getElementById(`${a},${b}`);
+    const target = document.querySelector(`[data-position*="${a},${b}"]`);
     const position = gameflow.HumanGameboard.getGameboard()[a][b];
     if (target === null) {
       return;
@@ -93,7 +95,11 @@ export function domManipulation() {
       target.style.backgroundSize = "contain";
     }
   };
+
+  const displayNotification = () => {};
   return {
+    addEventListeners,
+    displayNotification,
     updatePcBlock,
     updateHumanBlock,
     createBoards,
