@@ -3,6 +3,10 @@ import { Gameboard } from "./Gameboard.js";
 import { Player } from "./Player.js";
 
 export const gameflow = (() => {
+  const HumanGameboard = Gameboard();
+  const PCGameboard = Gameboard();
+  const Human = Player("Human");
+  const PC = Player("PC");
   let turn = false;
   const changeTurn = () => {
     turn = !turn;
@@ -13,13 +17,15 @@ export const gameflow = (() => {
       PCGameboard.haveAllSunk() ? handleEndOfGame("Human") : null;
     }
   };
-  const handleEndOfGame = (winner) => {
-    domManipulation.displayNotification(winner);
+  const handleHumanAttack = (a, b, removeListener) => {
+    if (!turn) {
+      Human.attack(a, b, removeListener);
+      gameflow.changeTurn();
+    }
   };
-  const HumanGameboard = Gameboard();
-  const PCGameboard = Gameboard();
-  const Human = Player("Human");
-  const PC = Player("PC");
+  const handleEndOfGame = (winner) => {
+    domManipulation().displayNotification(winner);
+  };
   const populateBoards = () => {
     PCGameboard.addShipsRandomly();
     HumanGameboard.addShipsRandomly();
@@ -29,6 +35,7 @@ export const gameflow = (() => {
     HumanGameboard.resetBoard();
   };
   return {
+    handleHumanAttack,
     resetBoards,
     populateBoards,
     changeTurn,

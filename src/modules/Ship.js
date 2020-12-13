@@ -19,7 +19,6 @@ const Ship = (id, length, p, vertical) => {
     return ship.every((i) => i.hit === true);
   }
   const getLength = () => length;
-  const getShipId = () => id;
   const getVertical = () => vertical;
   const getAllPosition = () => p;
   return {
@@ -27,7 +26,6 @@ const Ship = (id, length, p, vertical) => {
     ship,
     getVertical,
     getLength,
-    getShipId,
     getAllPosition,
     hasSunk,
     hit,

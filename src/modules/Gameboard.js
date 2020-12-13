@@ -1,4 +1,3 @@
-import { gameflow } from "./Gameflow.js";
 import { Ship } from "./Ship.js";
 
 export function Gameboard() {
@@ -140,7 +139,6 @@ export function Gameboard() {
   const haveAllSunk = () => ships.every((ship) => ship.hasSunk());
   const getGameboard = () => gameboard;
   const resetBoard = () => {
-    debugger;
     gameboard = [
       ["", "", "", "", "", "", "", "", "", ""],
       ["", "", "", "", "", "", "", "", "", ""],
@@ -155,11 +153,13 @@ export function Gameboard() {
     ];
     ships = [];
   };
+  const getShips = () => ships;
   return {
+    addShip,
+    getShips,
     resetBoard,
     addShipsRandomly,
     haveAllSunk,
-    addShip,
     getGameboard,
     receiveAttack,
   };

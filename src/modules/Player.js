@@ -2,10 +2,11 @@ import { domManipulation } from "./DomManipulation.js";
 import { gameflow } from "./Gameflow.js";
 
 export function Player(type) {
-  const attack = (a, b) => {
+  const attack = (a, b, removeListener) => {
     if (type === "Human") {
       gameflow.PCGameboard.receiveAttack(a, b);
       domManipulation().updatePcBlock(a, b);
+      removeListener();
     } else {
       handlePcAttack();
       gameflow.changeTurn();
@@ -17,10 +18,9 @@ export function Player(type) {
     const randomArr = () => [random(), random()];
     const randomPositionNotUsedYet = () => {
       let newArr = randomArr();
-      const checkIfArrayWasCalled = () =>
+      const checkIfArrayWasUsed = () =>
         usedPositions.some((i) => JSON.stringify(i) === JSON.stringify(newArr));
-
-      if (checkIfArrayWasCalled()) {
+      if (checkIfArrayWasUsed()) {
         randomPositionNotUsedYet();
       } else {
         usedPositions.push(newArr);
