@@ -1,22 +1,56 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  background-position: center;
+  background-image: url("https://images.unsplash.com/photo-1587974112126-2d7cb8d9beda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80");
 }
+
+button {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(141, 192, 236);
+}
+
 .title {
-  padding: 30px;
   display: flex;
   justify-content: center;
 }
+
+.player {
+  text-align: center;
+  font-size: 25px;
+  background-color: #83afff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
 .app {
   display: flex;
-  gap: 138px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
+
+.spotify {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
 .PC {
   /* background: url("https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o") */
   /* no-repeat center center; */
   background-size: cover;
 }
+
 .human {
   /* background: url("https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA") */
   /* no-repeat center center; */
@@ -26,15 +60,31 @@ body {
 .line {
   display: flex;
 }
+
 .block {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgb(223, 211, 211);
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
   cursor: pointer;
   margin: 1px;
 }
+
 .block:hover {
   border: 1px solid gray;
+}
+
+.missed {
+  background-image: url("https://www.kotar-rishon-lezion.org.il/wp-content/uploads/2017/10/wave-ocean-animated-gif-7.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.attacked {
+  background-color: initial;
+  background-image: url("https://cdn.lowgif.com/small/772e1a1c570fcf35-explosion-gif-transparent-background-4-gif-images-download.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .notification {
@@ -60,7 +110,6 @@ body {
   height: 1000px;
   display: flex;
   justify-content: center;
-  display: none;
 }
 
 .freeze {
@@ -69,11 +118,11 @@ body {
   height: 1000px;
 }
 
-.buttons {
+.buttons-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .hide {
