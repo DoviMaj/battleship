@@ -4,11 +4,9 @@ import { gameflow } from "./Gameflow.js";
 
 export function Player(type) {
   const gameboard = Gameboard();
-  const attack = (a, b, removeListener, oponent) => {
+  const attack = (a, b, oponent) => {
     if (type === "Human") {
       oponent.receiveAttack(a, b);
-      domManipulation().updatePcBlock(a, b);
-      removeListener();
     } else {
       handlePcAttack(gameflow.HumanGameboard);
       gameflow.changeTurn();

@@ -54,7 +54,7 @@ export function domManipulation() {
     humanBoard.classList.add("game-board", "human");
     const player = document.createElement("div");
     player.className = "player";
-    player.innerHTML = "You";
+    player.innerHTML = "Player";
     humanBoard.append(player);
     const hB = gameflow.HumanGameboard.getGameboard();
     hB.forEach((i, index) => {

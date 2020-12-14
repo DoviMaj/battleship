@@ -127,7 +127,7 @@ export function Gameboard() {
     if (p === "") {
       gameboard[a][b] = "missed";
       return false;
-    } else {
+    } else if (p === "ship") {
       gameboard[a][b] = "attacked";
       ships.map((ship) => {
         if (ship.p.filter((i) => i === [a, b])) {

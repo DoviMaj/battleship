@@ -19,8 +19,10 @@ export const gameflow = (() => {
   };
   const handleHumanAttack = (a, b, removeListener) => {
     if (!turn) {
-      Human.attack(a, b, removeListener, PCGameboard);
+      Human.attack(a, b, PCGameboard);
       changeTurn();
+      domManipulation().updatePcBlock(a, b);
+      removeListener();
     }
   };
   const handleEndOfGame = (winner) => {
