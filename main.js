@@ -20,12 +20,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _shooting_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shooting.png */ "./src/shooting.png");
 // Imports
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_shooting_png__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\n.title {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n  display: none;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  margin-bottom: 30px;\n  gap: 20px;\n}\n\n.hide {\n  display: none;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,6EAA6E;AAC/E;AACA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;AACzB;AACA;EACE,aAAa;EACb,UAAU;EACV,eAAe;EACf,uBAAuB;AACzB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;AACA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,WAAW;AACb;AACA;EACE,sBAAsB;AACxB;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,aAAa;EACb,uBAAuB;EACvB,iBAAiB;EACjB,mBAAmB;EACnB,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,OAAO;EACP,MAAM;EACN,eAAe;EACf,oCAAoC;EACpC,YAAY;EACZ,cAAc;EACd,aAAa;EACb,uBAAuB;EACvB,aAAa;AACf;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,aAAa;AACf","sourcesContent":["body {\n  font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, \"Trebuchet MS\", sans-serif;\n}\n.title {\n  padding: 30px;\n  display: flex;\n  justify-content: center;\n}\n.app {\n  display: flex;\n  gap: 138px;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n.block {\n  width: 30px;\n  height: 30px;\n  border: 1px solid rgb(223, 211, 211);\n  cursor: pointer;\n  margin: 1px;\n}\n.block:hover {\n  border: 1px solid gray;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n  display: none;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n\n.buttons {\n  display: flex;\n  justify-content: center;\n  margin-bottom: 30px;\n  gap: 20px;\n}\n\n.hide {\n  display: none;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: \"Play\", sans-serif;\n  margin: 0;\n  background-position: center;\n  background-image: url(\"https://images.unsplash.com/photo-1587974112126-2d7cb8d9beda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80\");\n}\n\nbutton {\n  padding: 10px;\n  background-color: burlywood;\n  border-radius: 5px;\n  font-family: \"Play\", sans-serif;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: rgb(141, 192, 236);\n}\n\n.title {\n  display: flex;\n  justify-content: center;\n}\n\n.player {\n  text-align: center;\n  font-size: 25px;\n  background-color: #83afff;\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  padding: 7px;\n}\n\n.app {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n}\n\n.spotify {\n  display: flex;\n  justify-content: center;\n  margin-bottom: 10px;\n}\n\niframe {\n  border-radius: 10px;\n}\n\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n\n.block {\n  width: 40px;\n  height: 40px;\n  border: 1px solid #889ade;\n}\n\n.PC .block {\n  cursor: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "), pointer;\n}\n\n.PC .block:hover {\n  border: 1px solid gray;\n  background-color: #d1e4f5;\n  box-shadow: 0px 1px 8px 4px #9da6d2;\n}\n\n.missed {\n  background-image: url(\"https://www.kotar-rishon-lezion.org.il/wp-content/uploads/2017/10/wave-ocean-animated-gif-7.gif\");\n  background-position: center;\n  background-size: cover;\n}\n\n.attacked {\n  background-color: initial;\n  background-image: url(\"https://cdn.lowgif.com/small/772e1a1c570fcf35-explosion-gif-transparent-background-4-gif-images-download.gif\");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n\n.buttons-wrapper {\n  display: flex;\n  justify-content: center;\n  gap: 20px;\n  margin-bottom: 20px;\n}\n\n.hide {\n  display: none;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,+BAA+B;EAC/B,SAAS;EACT,2BAA2B;EAC3B,yLAAyL;AAC3L;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,kBAAkB;EAClB,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,yBAAyB;EACzB,6BAA6B;EAC7B,4BAA4B;EAC5B,YAAY;AACd;;AAEA;EACE,aAAa;EACb,eAAe;EACf,6BAA6B;AAC/B;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,oGAAoG;EACpG,6BAA6B;EAC7B,sBAAsB;AACxB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,yBAAyB;AAC3B;;AAEA;EACE,wDAAsC;AACxC;;AAEA;EACE,sBAAsB;EACtB,yBAAyB;EACzB,mCAAmC;AACrC;;AAEA;EACE,wHAAwH;EACxH,2BAA2B;EAC3B,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,qIAAqI;EACrI,wBAAwB;EACxB,2BAA2B;EAC3B,4BAA4B;AAC9B;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,aAAa;EACb,uBAAuB;EACvB,iBAAiB;EACjB,mBAAmB;EACnB,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,OAAO;EACP,MAAM;EACN,eAAe;EACf,oCAAoC;EACpC,YAAY;EACZ,cAAc;EACd,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf","sourcesContent":["body {\n  font-family: \"Play\", sans-serif;\n  margin: 0;\n  background-position: center;\n  background-image: url(\"https://images.unsplash.com/photo-1587974112126-2d7cb8d9beda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80\");\n}\n\nbutton {\n  padding: 10px;\n  background-color: burlywood;\n  border-radius: 5px;\n  font-family: \"Play\", sans-serif;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: rgb(141, 192, 236);\n}\n\n.title {\n  display: flex;\n  justify-content: center;\n}\n\n.player {\n  text-align: center;\n  font-size: 25px;\n  background-color: #83afff;\n  border-top-right-radius: 10px;\n  border-top-left-radius: 10px;\n  padding: 7px;\n}\n\n.app {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n}\n\n.spotify {\n  display: flex;\n  justify-content: center;\n  margin-bottom: 10px;\n}\n\niframe {\n  border-radius: 10px;\n}\n\n.PC {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPTErb3QSXYF7mr4NkG682o\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.human {\n  /* background: url(\"https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwPfRHUDizkWflzrcxgE_lSA\") */\n  /* no-repeat center center; */\n  background-size: cover;\n}\n\n.line {\n  display: flex;\n}\n\n.block {\n  width: 40px;\n  height: 40px;\n  border: 1px solid #889ade;\n}\n\n.PC .block {\n  cursor: url(\"./shooting.png\"), pointer;\n}\n\n.PC .block:hover {\n  border: 1px solid gray;\n  background-color: #d1e4f5;\n  box-shadow: 0px 1px 8px 4px #9da6d2;\n}\n\n.missed {\n  background-image: url(\"https://www.kotar-rishon-lezion.org.il/wp-content/uploads/2017/10/wave-ocean-animated-gif-7.gif\");\n  background-position: center;\n  background-size: cover;\n}\n\n.attacked {\n  background-color: initial;\n  background-image: url(\"https://cdn.lowgif.com/small/772e1a1c570fcf35-explosion-gif-transparent-background-4-gif-images-download.gif\");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n\n.notification {\n  background-color: rgb(184, 184, 255);\n  width: 500px;\n  height: 200px;\n  border-radius: 10px;\n  display: flex;\n  justify-content: center;\n  flex-flow: column;\n  align-items: center;\n  gap: 40px;\n  margin-top: 30px;\n}\n\n.notification-wrapper {\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: fixed;\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n  display: flex;\n  justify-content: center;\n}\n\n.freeze {\n  background: rgba(255, 255, 255, 0.5);\n  z-index: 100;\n  height: 1000px;\n}\n\n.buttons-wrapper {\n  display: flex;\n  justify-content: center;\n  gap: 20px;\n  margin-bottom: 20px;\n}\n\n.hide {\n  display: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -149,6 +155,69 @@ module.exports = function cssWithMappingToString(item) {
 
   return [content].join('\n');
 };
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+
+/***/ "./src/shooting.png":
+/*!**************************!*\
+  !*** ./src/shooting.png ***!
+  \**************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "b90ca612aa3eb3285b9d68e7c93ea896.png");
 
 /***/ }),
 
@@ -518,12 +587,28 @@ __webpack_require__.r(__webpack_exports__);
 
 function domManipulation() {
   const addButtonsEventListeners = () => {
+    // play again button
+    const rematch = document.querySelector(".rematch");
+    const rematchGame = () => {
+      document.querySelector(".buttons-wrapper").classList.remove("hide");
+      const notification = document.querySelector(".notification-wrapper");
+      notification.classList.add("hide");
+      document.querySelector(".app").innerHTML = "";
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.resetBoards();
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.populateBoards();
+      domManipulation().createBoards();
+    };
+    rematch.addEventListener("click", rematchGame);
+
+    // start game button
     const startGameButton = document.querySelector(".start-game-button");
     const startGame = () => {
       addBoardEventListeners();
-      document.querySelector(".buttons").classList.add("hide");
+      document.querySelector(".buttons-wrapper").classList.add("hide");
     };
     startGameButton.addEventListener("click", startGame);
+
+    // randomize button
     const randomizeButton = document.querySelector(".randomize");
     const randomize = () => {
       document.querySelector(".app").innerHTML = "";
@@ -536,12 +621,11 @@ function domManipulation() {
 
   const addBoardEventListeners = () => {
     const handleClick = (e) => {
-      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.Human.attack(
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.handleHumanAttack(
         Number(e.target.dataset.position[0]),
-        Number(e.target.dataset.position[2])
+        Number(e.target.dataset.position[2]),
+        () => e.target.removeEventListener("click", handleClick, true)
       );
-      e.target.removeEventListener("click", handleClick, true);
-      _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.changeTurn();
     };
     const allPcBlocks = document.querySelectorAll(".PC .block");
     allPcBlocks.forEach((block) => {
@@ -553,6 +637,10 @@ function domManipulation() {
     const app = document.querySelector(".app");
     const humanBoard = document.createElement("div");
     humanBoard.classList.add("game-board", "human");
+    const player = document.createElement("div");
+    player.className = "player";
+    player.innerHTML = "Player";
+    humanBoard.append(player);
     const hB = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard();
     hB.forEach((i, index) => {
       const line = document.createElement("div");
@@ -562,7 +650,7 @@ function domManipulation() {
         block.className = "block";
         block.dataset.position = `${[index, ix]}`;
         if (item !== "") {
-          block.style.backgroundColor = "gray";
+          block.style.backgroundColor = "#ffd7d7";
         }
         line.append(block);
       });
@@ -572,6 +660,10 @@ function domManipulation() {
     //PC Board
     const PCboard = document.createElement("div");
     PCboard.classList.add("game-board", "PC");
+    const pc = document.createElement("div");
+    pc.className = "player";
+    pc.innerHTML = "PC";
+    PCboard.append(pc);
     const pB = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard();
 
     pB.forEach((i, index) => {
@@ -582,12 +674,6 @@ function domManipulation() {
         const block = document.createElement("div");
         block.className = "block";
         block.dataset.position = `${[index, ix]}`;
-        if (item === "attacked") {
-          block.style.backgroundColor = "gray";
-        }
-        if (item === "missed") {
-          block.style.backgroundColor = "red";
-        }
         line.append(block);
       });
       PCboard.append(line);
@@ -596,40 +682,41 @@ function domManipulation() {
   };
 
   const updatePcBlock = (a, b) => {
-    const position = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.getGameboard()[a][b];
+    const g = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PC.getGameboard();
+    const position = g[a][b];
     const node = document.querySelectorAll(`[data-position*="${a},${b}"]`);
     const target = node[node.length - 1];
     if (target === undefined) {
       return;
     }
-    if (position === "attacked") {
-      target.style.backgroundImage = `url(
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEX/////AAD/ysr/zs7/lpb/r6//ra3/x8f/tLT/pqb/lJT/kpL/u7v/qqr/oaH/m5v/wcH/f3//ior/09P/4uL/dXX/29v/jo7/6+v/aWn/W1v/enqbYFwKAAACbElEQVRoge2a0WLCIAxFqVWr1mq1m7rt//9zi0gDBUsC4Wk9j2VyegmyAVNqYWGBQX+5fkj19Wgvx9Dzz+qPRsaxgr6+/Od9VYlZGt2Xn+WiG6o631G/urp4LfdXS36WxvR09ZoelZBldFSBadTLWNDRh5qPY/Mq3VGPnQSnsJ0l+BIUIjmAY66lieUAdnmWFcVhWxKqP4wf3s3/YMaIEXMAm1RLQ83hWqIvZLPiOBKzYD02tA8kZKl5OYCOa8Gx2lIdbEud4lBqz6kL1qPjOFhZEnMAe6oFHXuuw7bMTpgsh1InSpYhz0HKkpkDOMUs6DilOqIWEYdS5znLTcZhW7yFTyjHrAUd51zHW4uoQ6l1qC5Yj7WEw84yLk6DbA7gMLUM0jkAHLGumEOp1q4+1uMg6XBGTLzmyLhJQlppR8BSwKHU1XXcSzgmWQo5HEuRsXqCE1l+YgUc4l8Rw2R6FRmwtppQYMQCX0ZxC+YYcF8ptsxrMMfN3r2KZsHl8XmItCmRpXUdRSyHqcO2ZP85pMEcN3woXP21nwPYSmbx6lHA8iaHa0neNmiw5oPfKFT9mRxAJ5ElMHddBEYskgPALOzttWa2HgasC/OgQEPIAWRlidZDwHKmOmwL+RhKg2M1Uw8DzjHigZqGkQNIykKseZaFmQMgnykZWPUwMM/6EnIArCyYg3nBwbAk5nAtkXPLpHoYOpolIwdAyoKOxAsngiUzh2t585roSKiHbwne8uxiL0HjNGcRu8xEi3+Z2YrkcCz+tay5YM6oh8HUxb9g7oVyAK8sgWVf8tL/OYm+Qy2y/77ww/yFv7Dw3/kFTvMTLyVZwXAAAAAASUVORK5CYII="
-      )`;
-      target.style.backgroundSize = "contain";
+    if (_Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.PCGameboard.isPositionAttacked(a, b)) {
+      target.classList.add("attacked");
     } else {
-      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
-      target.style.backgroundSize = "contain";
+      target.classList.add("missed");
     }
   };
   const updateHumanBlock = (a, b) => {
     const target = document.querySelector(`[data-position*="${a},${b}"]`);
-    const position = _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.getGameboard()[a][b];
     if (target === null) {
       return;
     }
-    if (position === "attacked") {
-      target.style.backgroundImage = `url(
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEX/////AAD/ysr/zs7/lpb/r6//ra3/x8f/tLT/pqb/lJT/kpL/u7v/qqr/oaH/m5v/wcH/f3//ior/09P/4uL/dXX/29v/jo7/6+v/aWn/W1v/enqbYFwKAAACbElEQVRoge2a0WLCIAxFqVWr1mq1m7rt//9zi0gDBUsC4Wk9j2VyegmyAVNqYWGBQX+5fkj19Wgvx9Dzz+qPRsaxgr6+/Od9VYlZGt2Xn+WiG6o631G/urp4LfdXS36WxvR09ZoelZBldFSBadTLWNDRh5qPY/Mq3VGPnQSnsJ0l+BIUIjmAY66lieUAdnmWFcVhWxKqP4wf3s3/YMaIEXMAm1RLQ83hWqIvZLPiOBKzYD02tA8kZKl5OYCOa8Gx2lIdbEud4lBqz6kL1qPjOFhZEnMAe6oFHXuuw7bMTpgsh1InSpYhz0HKkpkDOMUs6DilOqIWEYdS5znLTcZhW7yFTyjHrAUd51zHW4uoQ6l1qC5Yj7WEw84yLk6DbA7gMLUM0jkAHLGumEOp1q4+1uMg6XBGTLzmyLhJQlppR8BSwKHU1XXcSzgmWQo5HEuRsXqCE1l+YgUc4l8Rw2R6FRmwtppQYMQCX0ZxC+YYcF8ptsxrMMfN3r2KZsHl8XmItCmRpXUdRSyHqcO2ZP85pMEcN3woXP21nwPYSmbx6lHA8iaHa0neNmiw5oPfKFT9mRxAJ5ElMHddBEYskgPALOzttWa2HgasC/OgQEPIAWRlidZDwHKmOmwL+RhKg2M1Uw8DzjHigZqGkQNIykKseZaFmQMgnykZWPUwMM/6EnIArCyYg3nBwbAk5nAtkXPLpHoYOpolIwdAyoKOxAsngiUzh2t585roSKiHbwne8uxiL0HjNGcRu8xEi3+Z2YrkcCz+tay5YM6oh8HUxb9g7oVyAK8sgWVf8tL/OYm+Qy2y/77ww/yFv7Dw3/kFTvMTLyVZwXAAAAAASUVORK5CYII="
-      )`;
-      target.style.backgroundSize = "contain";
+    if (_Gameflow_js__WEBPACK_IMPORTED_MODULE_0__.gameflow.HumanGameboard.isPositionAttacked(a, b)) {
+      target.classList.add("attacked");
+      target.style.backgroundColor = "initial";
     } else {
-      target.style.backgroundImage = `url("https://e7.pngegg.com/pngimages/549/734/png-clipart-explosion-illustration-ship-explosion-explosion-war.png")`;
-      target.style.backgroundSize = "contain";
+      target.classList.add("missed");
     }
   };
 
-  const displayNotification = () => {};
+  const displayNotification = (winner) => {
+    const notification = document.querySelector(".notification-wrapper");
+    notification.classList.remove("hide");
+    if (winner === "Human") {
+      document.querySelector("#winner").innerHTML = `Congratulations! You won!`;
+    } else {
+      document.querySelector("#winner").innerHTML = `You Lost! PC winns ;)`;
+    }
+  };
   return {
     addButtonsEventListeners,
     displayNotification,
@@ -656,9 +743,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Gameboard": () => /* binding */ Gameboard
 /* harmony export */ });
-/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
-/* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Ship.js */ "./src/modules/Ship.js");
-
+/* harmony import */ var _Ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Ship.js */ "./src/modules/Ship.js");
 
 
 function Gameboard() {
@@ -676,6 +761,8 @@ function Gameboard() {
     ["", "", "", "", "", "", "", "", "", ""],
   ];
 
+  const isPositionAttacked = (a, b) => gameboard[a][b] === "attacked";
+  const isPositionIsMissed = (a, b) => gameboard[a][b] === "missed";
   const positionsAvailable = (p) => {
     const g = getGameboard();
     const condition = (pos) => {
@@ -708,37 +795,8 @@ function Gameboard() {
   };
 
   const addShip = (id, length, allPositions, vertical) => {
-    ships.push((0,_Ship_js__WEBPACK_IMPORTED_MODULE_1__.Ship)(id, length, allPositions, vertical));
+    ships.push((0,_Ship_js__WEBPACK_IMPORTED_MODULE_0__.Ship)(id, length, allPositions, vertical));
     updateGameboard();
-  };
-
-  const updateGameboard = () => {
-    ships.forEach((ship) => {
-      let p = ship.getAllPosition();
-      for (let i = 0; i < ship.getLength(); i++) {
-        if (ship.getVertical()) {
-          gameboard[p[i][0]][p[i][1]] = "ship";
-        } else {
-          gameboard[p[i][0]][p[i][1]] = "ship";
-        }
-      }
-    });
-  };
-
-  const receiveAttack = (a, b) => {
-    let p = gameboard[a][b];
-    if (p === "") {
-      gameboard[a][b] = "missed";
-      return "missed";
-    } else if (p !== "missed") {
-      gameboard[a][b] = "attacked";
-      ships.map((ship) => {
-        if (ship.p.filter((i) => i === [a, b])) {
-          ship.hit([a, b]);
-          return "missed";
-        }
-      });
-    }
   };
 
   const randomTrueOrFalse = () => (random0to9() > 5 ? true : false);
@@ -797,10 +855,38 @@ function Gameboard() {
     });
   };
 
+  const updateGameboard = () => {
+    ships.forEach((ship) => {
+      let p = ship.getAllPosition();
+      for (let i = 0; i < ship.getLength(); i++) {
+        if (ship.getVertical()) {
+          gameboard[p[i][0]][p[i][1]] = "ship";
+        } else {
+          gameboard[p[i][0]][p[i][1]] = "ship";
+        }
+      }
+    });
+  };
+
+  const receiveAttack = (a, b) => {
+    let p = gameboard[a][b];
+    if (p === "") {
+      gameboard[a][b] = "missed";
+      return false;
+    } else if (p === "ship") {
+      gameboard[a][b] = "attacked";
+      ships.map((ship) => {
+        if (ship.p.filter((i) => i === [a, b])) {
+          ship.hit([a, b]);
+        }
+      });
+      return true;
+    }
+  };
+
   const haveAllSunk = () => ships.every((ship) => ship.hasSunk());
   const getGameboard = () => gameboard;
   const resetBoard = () => {
-    debugger;
     gameboard = [
       ["", "", "", "", "", "", "", "", "", ""],
       ["", "", "", "", "", "", "", "", "", ""],
@@ -815,12 +901,16 @@ function Gameboard() {
     ];
     ships = [];
   };
+  const getShips = () => ships;
   return {
+    addShip,
+    getShips,
     resetBoard,
     addShipsRandomly,
     haveAllSunk,
-    addShip,
     getGameboard,
+    isPositionAttacked,
+    isPositionIsMissed,
     receiveAttack,
   };
 }
@@ -850,39 +940,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const gameflow = (() => {
+  const HumanGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_1__.Gameboard)();
+  const PCGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_1__.Gameboard)();
+  const Human = (0,_Player_js__WEBPACK_IMPORTED_MODULE_2__.Player)("Human");
+  const PC = (0,_Player_js__WEBPACK_IMPORTED_MODULE_2__.Player)("PC");
   let turn = false;
   const changeTurn = () => {
     turn = !turn;
     if (turn) {
-      PC.attack();
+      PC.attack(HumanGameboard);
       HumanGameboard.haveAllSunk() ? handleEndOfGame("PC") : null;
     } else {
       PCGameboard.haveAllSunk() ? handleEndOfGame("Human") : null;
     }
   };
-  const handleEndOfGame = (winner) => {
-    _DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation.displayNotification(winner);
+  const handleHumanAttack = (a, b, removeListener) => {
+    if (!turn) {
+      Human.attack(a, b, PCGameboard);
+      changeTurn();
+      (0,_DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updatePcBlock(a, b);
+      removeListener();
+    }
   };
-  const HumanGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_1__.Gameboard)();
-  const PCGameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_1__.Gameboard)();
-  const Human = (0,_Player_js__WEBPACK_IMPORTED_MODULE_2__.Player)("Human");
-  const PC = (0,_Player_js__WEBPACK_IMPORTED_MODULE_2__.Player)("PC");
+  const handleEndOfGame = (winner) => {
+    (0,_DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().displayNotification(winner);
+  };
   const populateBoards = () => {
-    PCGameboard.addShipsRandomly();
     HumanGameboard.addShipsRandomly();
+    PCGameboard.addShipsRandomly();
+    console.table(HumanGameboard.getGameboard());
+    console.table(PCGameboard.getGameboard());
   };
   const resetBoards = () => {
-    PCGameboard.resetBoard();
     HumanGameboard.resetBoard();
+    PCGameboard.resetBoard();
   };
   return {
+    handleHumanAttack,
     resetBoards,
     populateBoards,
     changeTurn,
     Human,
     PC,
-    HumanGameboard,
     PCGameboard,
+    HumanGameboard,
   };
 })();
 
@@ -904,40 +1005,116 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Player": () => /* binding */ Player
 /* harmony export */ });
 /* harmony import */ var _DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DomManipulation.js */ "./src/modules/DomManipulation.js");
-/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
+/* harmony import */ var _Gameboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Gameboard.js */ "./src/modules/Gameboard.js");
+/* harmony import */ var _Gameflow_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Gameflow.js */ "./src/modules/Gameflow.js");
+
 
 
 
 function Player(type) {
-  const attack = (a, b) => {
+  const gameboard = (0,_Gameboard_js__WEBPACK_IMPORTED_MODULE_1__.Gameboard)();
+  const attack = (a, b, oponent) => {
     if (type === "Human") {
-      _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.PCGameboard.receiveAttack(a, b);
-      (0,_DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updatePcBlock(a, b);
+      oponent.receiveAttack(a, b);
     } else {
-      handlePcAttack();
-      _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.changeTurn();
+      handlePcAttack(_Gameflow_js__WEBPACK_IMPORTED_MODULE_2__.gameflow.HumanGameboard);
+      _Gameflow_js__WEBPACK_IMPORTED_MODULE_2__.gameflow.changeTurn();
     }
   };
+  // implement AI ()
+  // needs to know previous position attacked (x)
+  // needs to know it it was sucessfull or not (x)
+  // needs to be able to try adjacent slots ()
+  // needs to know where is a valid move ()
   const usedPositions = [];
-  const handlePcAttack = () => {
+  let newArr = [];
+  let currentMutationOption;
+  // 4 mutation options newArr[0] + 1, newArr[0] -1, newArr[1] + 1, newArr[1] - 1
+  const options = [
+    (arr) => [arr[0] + 1, arr[1]],
+    (arr) => [arr[0] - 1, arr[1]],
+    (arr) => [arr[0], arr[1] + 1],
+    (arr) => [arr[0], arr[1] - 1],
+  ];
+  // choose random mutation option
+  const randomArrMutation = () => {
+    const randomNum0To4 = Math.floor(Math.random() * (4 - 0)) + 0;
+    currentMutationOption = (arr) => options[randomNum0To4](arr);
+  };
+  randomArrMutation();
+  const handlePcAttack = (oponent) => {
     const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
     const randomArr = () => [random(), random()];
-    const randomPositionNotUsedYet = () => {
-      let newArr = randomArr();
-      const checkIfArrayWasCalled = () =>
-        usedPositions.some((i) => JSON.stringify(i) === JSON.stringify(newArr));
+    const checkIfArrayWasUsed = () => {
+      return usedPositions.some(
+        (i) => JSON.stringify(i) === JSON.stringify(newArr)
+      );
+    };
 
-      if (checkIfArrayWasCalled()) {
-        randomPositionNotUsedYet();
+    const getNewPosition = () => {
+      // -- attack based on previous attack --
+      // keep track of current sucessfull attacks
+      const currentSuccessfull = [];
+      // checks if previous was succesfull
+      if (usedPositions.length !== 0) {
+        if (usedPositions[usedPositions.length - 1].successful) {
+          currentSuccessfull.push(usedPositions[usedPositions.length - 1]);
+          newArr = currentMutationOption(newArr);
+          // continue with the same mutation option until its not valid
+          // then resort to oposite of first option
+
+          // clear currentSuccesfull
+          // check for for > 9 or < 0 and already called
+          // if true try a different option randomlly
+          if (
+            newArr[0] > 9 ||
+            newArr[0] < 0 ||
+            newArr[1] > 9 ||
+            newArr[1] < 0 ||
+            checkIfArrayWasUsed()
+          ) {
+            randomPcAttack();
+          } else {
+            const attackWasSuccesfull = oponent.receiveAttack(
+              newArr[0],
+              newArr[1]
+            );
+            if (attackWasSuccesfull) {
+              usedPositions.push({ p: newArr, successful: true });
+            } else {
+              usedPositions.push({ p: newArr, successful: false });
+            }
+            (0,_DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updateHumanBlock(newArr[0], newArr[1]);
+            return;
+          }
+        } else {
+          randomPcAttack();
+        }
       } else {
-        usedPositions.push(newArr);
-        _Gameflow_js__WEBPACK_IMPORTED_MODULE_1__.gameflow.HumanGameboard.receiveAttack(newArr[0], newArr[1]);
+        randomPcAttack();
+      }
+    };
+    const randomPcAttack = () => {
+      newArr = randomArr();
+      if (checkIfArrayWasUsed()) {
+        randomPcAttack();
+      } else {
+        const attackWasSuccesfull = oponent.receiveAttack(newArr[0], newArr[1]);
+        if (attackWasSuccesfull) {
+          usedPositions.push({ p: newArr, successful: true });
+        } else {
+          usedPositions.push({ p: newArr, successful: false });
+        }
         (0,_DomManipulation_js__WEBPACK_IMPORTED_MODULE_0__.domManipulation)().updateHumanBlock(newArr[0], newArr[1]);
       }
     };
-    randomPositionNotUsedYet();
+    getNewPosition();
   };
+  const getGameboard = () => gameboard.getGameboard();
+  const getGameboardFunc = () => gameboard;
   return {
+    getGameboardFunc,
+    getGameboard,
     attack,
   };
 }
@@ -980,7 +1157,6 @@ const Ship = (id, length, p, vertical) => {
     return ship.every((i) => i.hit === true);
   }
   const getLength = () => length;
-  const getShipId = () => id;
   const getVertical = () => vertical;
   const getAllPosition = () => p;
   return {
@@ -988,7 +1164,6 @@ const Ship = (id, length, p, vertical) => {
     ship,
     getVertical,
     getLength,
-    getShipId,
     getAllPosition,
     hasSunk,
     hit,
@@ -1050,6 +1225,18 @@ const Ship = (id, length, p, vertical) => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
@@ -1064,6 +1251,26 @@ const Ship = (id, length, p, vertical) => {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
