@@ -97,7 +97,7 @@ export function domManipulation() {
   };
 
   const updatePcBlock = (a, b) => {
-    const g = gameflow.PC.getGameboard();
+    const g = gameflow.PCGameboard.getGameboard();
     const position = g[a][b];
     const node = document.querySelectorAll(`[data-position*="${a},${b}"]`);
     const target = node[node.length - 1];

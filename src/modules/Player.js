@@ -1,9 +1,7 @@
 import { domManipulation } from "./DomManipulation.js";
-import { Gameboard } from "./Gameboard.js";
 import { gameflow } from "./Gameflow.js";
 
 export function Player(type) {
-  const gameboard = Gameboard();
   const attack = (a, b, oponent) => {
     if (type === "Human") {
       oponent.receiveAttack(a, b);
@@ -12,36 +10,32 @@ export function Player(type) {
       gameflow.changeTurn();
     }
   };
-  // implement AI ()
-  // needs to know previous position attacked (x)
-  // needs to know it it was sucessfull or not (x)
-  // needs to be able to try adjacent slots ()
-  // needs to know where is a valid move ()
   const usedPositions = [];
   let newArr = [];
   let currentMutationOption;
-  // 4 mutation options newArr[0] + 1, newArr[0] -1, newArr[1] + 1, newArr[1] - 1
+  // 4 mutation functions
   const options = [
     (arr) => [arr[0] + 1, arr[1]],
     (arr) => [arr[0] - 1, arr[1]],
     (arr) => [arr[0], arr[1] + 1],
     (arr) => [arr[0], arr[1] - 1],
   ];
-  // choose random mutation option
+  // define random mutation option
   const randomArrMutation = () => {
-    const randomNum0To4 = Math.floor(Math.random() * (4 - 0)) + 0;
-    currentMutationOption = (arr) => options[randomNum0To4](arr);
+    const randomNum0To3 = Math.floor(Math.random() * (4 - 0)) + 0;
+    currentMutationOption = (arr) => options[randomNum0To3](arr);
   };
   randomArrMutation();
-  const handlePcAttack = (oponent) => {
-    const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
-    const randomArr = () => [random(), random()];
-    const checkIfArrayWasUsed = () => {
-      return usedPositions.some(
-        (i) => JSON.stringify(i) === JSON.stringify(newArr)
-      );
-    };
 
+  const random = () => Math.floor(Math.random() * (10 - 0)) + 0;
+  const randomArr = () => [random(), random()];
+  const checkIfArrayWasUsed = () => {
+    return usedPositions.some(
+      (i) => JSON.stringify(i) === JSON.stringify(newArr)
+    );
+  };
+
+  const handlePcAttack = (oponent) => {
     const getNewPosition = () => {
       // -- attack based on previous attack --
       // keep track of current sucessfull attacks
@@ -51,10 +45,6 @@ export function Player(type) {
         if (usedPositions[usedPositions.length - 1].successful) {
           currentSuccessfull.push(usedPositions[usedPositions.length - 1]);
           newArr = currentMutationOption(newArr);
-          // continue with the same mutation option until its not valid
-          // then resort to oposite of first option
-
-          // clear currentSuccesfull
           // check for for > 9 or < 0 and already called
           // if true try a different option randomlly
           if (
@@ -79,6 +69,8 @@ export function Player(type) {
             return;
           }
         } else {
+          // continue with the same mutation option until its not sucessfull
+          randomArrMutation();
           randomPcAttack();
         }
       } else {
@@ -101,11 +93,7 @@ export function Player(type) {
     };
     getNewPosition();
   };
-  const getGameboard = () => gameboard.getGameboard();
-  const getGameboardFunc = () => gameboard;
   return {
-    getGameboardFunc,
-    getGameboard,
     attack,
   };
 }
