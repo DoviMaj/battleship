@@ -15,6 +15,8 @@ export function Gameboard() {
     ["", "", "", "", "", "", "", "", "", ""],
   ];
 
+  const isPositionAttacked = (a, b) => gameboard[a][b] === "attacked";
+  const isPositionIsMissed = (a, b) => gameboard[a][b] === "missed";
   const positionsAvailable = (p) => {
     const g = getGameboard();
     const condition = (pos) => {
@@ -49,35 +51,6 @@ export function Gameboard() {
   const addShip = (id, length, allPositions, vertical) => {
     ships.push(Ship(id, length, allPositions, vertical));
     updateGameboard();
-  };
-
-  const updateGameboard = () => {
-    ships.forEach((ship) => {
-      let p = ship.getAllPosition();
-      for (let i = 0; i < ship.getLength(); i++) {
-        if (ship.getVertical()) {
-          gameboard[p[i][0]][p[i][1]] = "ship";
-        } else {
-          gameboard[p[i][0]][p[i][1]] = "ship";
-        }
-      }
-    });
-  };
-
-  const receiveAttack = (a, b) => {
-    let p = gameboard[a][b];
-    if (p === "") {
-      gameboard[a][b] = "missed";
-      return "missed";
-    } else if (p !== "missed") {
-      gameboard[a][b] = "attacked";
-      ships.map((ship) => {
-        if (ship.p.filter((i) => i === [a, b])) {
-          ship.hit([a, b]);
-          return "missed";
-        }
-      });
-    }
   };
 
   const randomTrueOrFalse = () => (random0to9() > 5 ? true : false);
@@ -136,6 +109,35 @@ export function Gameboard() {
     });
   };
 
+  const updateGameboard = () => {
+    ships.forEach((ship) => {
+      let p = ship.getAllPosition();
+      for (let i = 0; i < ship.getLength(); i++) {
+        if (ship.getVertical()) {
+          gameboard[p[i][0]][p[i][1]] = "ship";
+        } else {
+          gameboard[p[i][0]][p[i][1]] = "ship";
+        }
+      }
+    });
+  };
+
+  const receiveAttack = (a, b) => {
+    let p = gameboard[a][b];
+    if (p === "") {
+      gameboard[a][b] = "missed";
+      return false;
+    } else {
+      gameboard[a][b] = "attacked";
+      ships.map((ship) => {
+        if (ship.p.filter((i) => i === [a, b])) {
+          ship.hit([a, b]);
+        }
+      });
+      return true;
+    }
+  };
+
   const haveAllSunk = () => ships.every((ship) => ship.hasSunk());
   const getGameboard = () => gameboard;
   const resetBoard = () => {
@@ -161,6 +163,8 @@ export function Gameboard() {
     addShipsRandomly,
     haveAllSunk,
     getGameboard,
+    isPositionAttacked,
+    isPositionIsMissed,
     receiveAttack,
   };
 }

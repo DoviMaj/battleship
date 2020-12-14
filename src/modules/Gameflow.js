@@ -11,7 +11,7 @@ export const gameflow = (() => {
   const changeTurn = () => {
     turn = !turn;
     if (turn) {
-      PC.attack();
+      PC.attack(HumanGameboard);
       HumanGameboard.haveAllSunk() ? handleEndOfGame("PC") : null;
     } else {
       PCGameboard.haveAllSunk() ? handleEndOfGame("Human") : null;
@@ -19,20 +19,22 @@ export const gameflow = (() => {
   };
   const handleHumanAttack = (a, b, removeListener) => {
     if (!turn) {
-      Human.attack(a, b, removeListener);
-      gameflow.changeTurn();
+      Human.attack(a, b, removeListener, PCGameboard);
+      changeTurn();
     }
   };
   const handleEndOfGame = (winner) => {
     domManipulation().displayNotification(winner);
   };
   const populateBoards = () => {
-    PCGameboard.addShipsRandomly();
     HumanGameboard.addShipsRandomly();
+    PCGameboard.addShipsRandomly();
+    console.table(HumanGameboard.getGameboard());
+    console.table(PCGameboard.getGameboard());
   };
   const resetBoards = () => {
-    PCGameboard.resetBoard();
     HumanGameboard.resetBoard();
+    PCGameboard.resetBoard();
   };
   return {
     handleHumanAttack,
@@ -41,7 +43,7 @@ export const gameflow = (() => {
     changeTurn,
     Human,
     PC,
-    HumanGameboard,
     PCGameboard,
+    HumanGameboard,
   };
 })();

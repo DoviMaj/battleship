@@ -65,7 +65,7 @@ export function domManipulation() {
         block.className = "block";
         block.dataset.position = `${[index, ix]}`;
         if (item !== "") {
-          block.style.backgroundColor = "whitesmoke";
+          block.style.backgroundColor = "#ffd7d7";
         }
         line.append(block);
       });
@@ -97,13 +97,14 @@ export function domManipulation() {
   };
 
   const updatePcBlock = (a, b) => {
-    const position = gameflow.PCGameboard.getGameboard()[a][b];
+    const g = gameflow.PC.getGameboard();
+    const position = g[a][b];
     const node = document.querySelectorAll(`[data-position*="${a},${b}"]`);
     const target = node[node.length - 1];
     if (target === undefined) {
       return;
     }
-    if (position === "attacked") {
+    if (gameflow.PCGameboard.isPositionAttacked(a, b)) {
       target.classList.add("attacked");
     } else {
       target.classList.add("missed");
@@ -111,11 +112,10 @@ export function domManipulation() {
   };
   const updateHumanBlock = (a, b) => {
     const target = document.querySelector(`[data-position*="${a},${b}"]`);
-    const position = gameflow.HumanGameboard.getGameboard()[a][b];
     if (target === null) {
       return;
     }
-    if (position === "attacked") {
+    if (gameflow.HumanGameboard.isPositionAttacked(a, b)) {
       target.classList.add("attacked");
       target.style.backgroundColor = "initial";
     } else {
@@ -124,7 +124,6 @@ export function domManipulation() {
   };
 
   const displayNotification = (winner) => {
-    debugger;
     const notification = document.querySelector(".notification-wrapper");
     notification.classList.remove("hide");
     if (winner === "Human") {
