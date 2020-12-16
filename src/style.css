@@ -134,3 +134,13 @@ iframe {
 .hide {
   display: none;
 }
+
+@media (max-width: 872px) {
+  .block {
+    width: 30px;
+    height: 30px;
+  }
+  .app {
+    gap: 20px;
+  }
+}
