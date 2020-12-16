@@ -1,14 +1,11 @@
-import { domManipulation } from "./DomManipulation.js";
-import { gameflow } from "./Gameflow.js";
-
 export function Player(type) {
   const attack = (a, b, oponent) => {
     if (type === "Human") {
       oponent.receiveAttack(a, b);
     } else {
-      handlePcAttack(gameflow.HumanGameboard);
-      gameflow.changeTurn();
+      handlePcAttack(oponent);
     }
+    return newArr;
   };
   const usedPositions = [];
   let newArr = [];
@@ -34,64 +31,61 @@ export function Player(type) {
       (i) => JSON.stringify(i) === JSON.stringify(newArr)
     );
   };
-
-  const handlePcAttack = (oponent) => {
-    const getNewPosition = () => {
-      // -- attack based on previous attack --
-      // keep track of current sucessfull attacks
-      const currentSuccessfull = [];
-      // checks if previous was succesfull
-      if (usedPositions.length !== 0) {
-        if (usedPositions[usedPositions.length - 1].successful) {
-          currentSuccessfull.push(usedPositions[usedPositions.length - 1]);
-          newArr = currentMutationOption(newArr);
-          // check for for > 9 or < 0 and already called
-          // if true try a different option randomlly
-          if (
-            newArr[0] > 9 ||
-            newArr[0] < 0 ||
-            newArr[1] > 9 ||
-            newArr[1] < 0 ||
-            checkIfArrayWasUsed()
-          ) {
-            randomPcAttack();
-          } else {
-            const attackWasSuccesfull = oponent.receiveAttack(
-              newArr[0],
-              newArr[1]
-            );
-            if (attackWasSuccesfull) {
-              usedPositions.push({ p: newArr, successful: true });
-            } else {
-              usedPositions.push({ p: newArr, successful: false });
-            }
-            domManipulation().updateHumanBlock(newArr[0], newArr[1]);
-            return;
-          }
-        } else {
-          // continue with the same mutation option until its not sucessfull
-          randomArrMutation();
+  const randomPcAttack = (oponent) => {
+    newArr = randomArr();
+    if (checkIfArrayWasUsed()) {
+      randomPcAttack();
+    } else {
+      const attackWasSuccesfull = oponent.receiveAttack(newArr[0], newArr[1]);
+      if (attackWasSuccesfull) {
+        usedPositions.push({ p: newArr, successful: true });
+      } else {
+        usedPositions.push({ p: newArr, successful: false });
+      }
+    }
+  };
+  const getNewPosition = (oponent) => {
+    // -- attack based on previous attack --
+    // keep track of current sucessfull attacks
+    const currentSuccessfull = [];
+    // checks if previous was succesfull
+    if (usedPositions.length !== 0) {
+      if (usedPositions[usedPositions.length - 1].successful) {
+        currentSuccessfull.push(usedPositions[usedPositions.length - 1]);
+        newArr = currentMutationOption(newArr);
+        // check for for > 9 or < 0 and already called
+        // if true try a different option randomlly
+        if (
+          newArr[0] > 9 ||
+          newArr[0] < 0 ||
+          newArr[1] > 9 ||
+          newArr[1] < 0 ||
+          checkIfArrayWasUsed()
+        ) {
           randomPcAttack();
-        }
-      } else {
-        randomPcAttack();
-      }
-    };
-    const randomPcAttack = () => {
-      newArr = randomArr();
-      if (checkIfArrayWasUsed()) {
-        randomPcAttack();
-      } else {
-        const attackWasSuccesfull = oponent.receiveAttack(newArr[0], newArr[1]);
-        if (attackWasSuccesfull) {
-          usedPositions.push({ p: newArr, successful: true });
         } else {
-          usedPositions.push({ p: newArr, successful: false });
+          const attackWasSuccesfull = oponent.receiveAttack(
+            newArr[0],
+            newArr[1]
+          );
+          if (attackWasSuccesfull) {
+            usedPositions.push({ p: newArr, successful: true });
+          } else {
+            usedPositions.push({ p: newArr, successful: false });
+          }
+          return;
         }
-        domManipulation().updateHumanBlock(newArr[0], newArr[1]);
+      } else {
+        // continue with the same mutation option until its not sucessfull
+        randomArrMutation();
+        randomPcAttack(oponent);
       }
-    };
-    getNewPosition();
+    } else {
+      randomPcAttack(oponent);
+    }
+  };
+  const handlePcAttack = (oponent) => {
+    getNewPosition(oponent);
   };
   return {
     attack,
