@@ -11,7 +11,9 @@ export const gameflow = (() => {
   const changeTurn = () => {
     turn = !turn;
     if (turn) {
-      PC.attack(HumanGameboard);
+      const newArr = PC.attack(1, 2, HumanGameboard);
+      domManipulation().updateHumanBlock(newArr[0], newArr[1]);
+      changeTurn();
       HumanGameboard.haveAllSunk() ? handleEndOfGame("PC") : null;
     } else {
       PCGameboard.haveAllSunk() ? handleEndOfGame("Human") : null;
@@ -20,8 +22,8 @@ export const gameflow = (() => {
   const handleHumanAttack = (a, b, removeListener) => {
     if (!turn) {
       Human.attack(a, b, PCGameboard);
-      changeTurn();
       domManipulation().updatePcBlock(a, b);
+      changeTurn();
       removeListener();
     }
   };
