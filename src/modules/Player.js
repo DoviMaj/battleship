@@ -34,7 +34,7 @@ export function Player(type) {
   const randomPcAttack = (oponent) => {
     newArr = randomArr();
     if (checkIfArrayWasUsed()) {
-      randomPcAttack();
+      randomPcAttack(oponent);
     } else {
       const attackWasSuccesfull = oponent.receiveAttack(newArr[0], newArr[1]);
       if (attackWasSuccesfull) {
@@ -62,7 +62,7 @@ export function Player(type) {
           newArr[1] < 0 ||
           checkIfArrayWasUsed()
         ) {
-          randomPcAttack();
+          randomPcAttack(oponent);
         } else {
           const attackWasSuccesfull = oponent.receiveAttack(
             newArr[0],
