@@ -1,3 +1,3 @@
 # Battleship Project
 
-![gif](gif.gif)
+![gif](battleship-gif.gif)
